@@ -1,0 +1,2 @@
+questOnly = true;
+girlsOnly = true;
