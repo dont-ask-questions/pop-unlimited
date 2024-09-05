@@ -1,0 +1,2 @@
+gotoAndStop("dizzystart");
+play();

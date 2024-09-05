@@ -1,0 +1,1 @@
+jointShape._visible = false;

@@ -1,0 +1,1 @@
+head.eyes.gotoAndStop(eyesFrame);

@@ -1,0 +1,10 @@
+head.eyes.gotoAndStop("laugh");
+head.mouth.gotoAndStop(15);
+var avMC = _root.camera.scene.char.avatar;
+var sLook = avMC.getLook();
+var aLook = sLook.split(",");
+trace("sLook = " + sLook + " aLook[1] = " + aLook[1]);
+var colorTrans = new flash.geom.ColorTransform();
+colorTrans.rgb = aLook[1];
+var trans = new flash.geom.Transform(muscle);
+trans.colorTransform = colorTrans;
