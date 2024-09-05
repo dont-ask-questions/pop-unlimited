@@ -1,0 +1,1 @@
+head.mouth.gotoAndPlay("sneeze");

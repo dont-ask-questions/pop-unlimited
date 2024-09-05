@@ -1,0 +1,2 @@
+delete sweat.onEnterFrame;
+play();

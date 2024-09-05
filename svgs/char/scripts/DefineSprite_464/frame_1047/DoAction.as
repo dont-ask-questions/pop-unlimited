@@ -1,0 +1,2 @@
+hairColor = newHairColor;
+setParts();

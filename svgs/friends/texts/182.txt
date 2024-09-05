@@ -1,0 +1,5 @@
+are you sure you 
+--- RECORDSEPARATOR ---
+want to delete 
+--- RECORDSEPARATOR ---
+this quidget?

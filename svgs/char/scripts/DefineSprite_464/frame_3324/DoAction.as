@@ -1,0 +1,1 @@
+finishedDrinkFlag = false;

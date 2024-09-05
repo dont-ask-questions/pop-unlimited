@@ -1,0 +1,15 @@
+Make sure you are entering a valid 
+--- RECORDSEPARATOR ---
+USERNAME
+--- RECORDSEPARATOR ---
+ 
+--- RECORDSEPARATOR ---
+for the friend you would like to add. 
+--- RECORDSEPARATOR ---
+Character names like 
+--- RECORDSEPARATOR ---
+Funny Tomato
+--- RECORDSEPARATOR ---
+ will not 
+--- RECORDSEPARATOR ---
+work in place of a username. 
