@@ -1,0 +1,2 @@
+id = "hit";
+funcName = "wallHit";

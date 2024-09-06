@@ -1,0 +1,3 @@
+point and click the mouse
+--- RECORDSEPARATOR ---
+to move your character

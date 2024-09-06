@@ -1,0 +1,3 @@
+PETS:
+--- RECORDSEPARATOR ---
+ Dog and hampster

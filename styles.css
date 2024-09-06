@@ -44,3 +44,20 @@ h1 {
     text-align: center;
     margin-top: 50px;
 }
+
+/* Define a custom font for game prompts */
+@font-face {
+    font-family: 'WebLetterer BB';
+    src: url('.../svgs/old login page stuf/fonts/301_WebLetterer BB.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply the custom font to the prompt text */
+#promptText {
+    font-family: 'WebLetterer BB', sans-serif;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
