@@ -1,0 +1,11 @@
+are you a
+--- RECORDSEPARATOR ---
+boy 
+--- RECORDSEPARATOR ---
+or a
+--- RECORDSEPARATOR ---
+ 
+--- RECORDSEPARATOR ---
+girl
+--- RECORDSEPARATOR ---
+?

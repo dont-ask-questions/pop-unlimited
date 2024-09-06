@@ -1,0 +1,9 @@
+myColors = [1286141];
+growth1 = this.attachMovie("Growth","growth" + this.getNextHighestDepth(),this.getNextHighestDepth());
+growth1._y = Math.random() * Stage.height - Stage.height / 2;
+growth1._x = -20 - Stage.width / 2;
+growth1._rotation = 90;
+growth2 = this.attachMovie("Growth","growth" + this.getNextHighestDepth(),this.getNextHighestDepth());
+growth2._y = Math.random() * Stage.height - Stage.height / 2;
+growth2._x = 20 + Stage.width / 2;
+growth2._rotation = -90;

@@ -1,0 +1,3 @@
+Click on a player to chat or battle.
+--- RECORDSEPARATOR ---
+Roll over a player to view their stats.

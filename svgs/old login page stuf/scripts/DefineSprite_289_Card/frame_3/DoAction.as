@@ -1,0 +1,12 @@
+stop();
+charClip._visible = false;
+card._visible = true;
+char._visible = true;
+char._xscale = -120;
+char._yscale = 120;
+char._x = -80;
+char._y = -60;
+mask._width = 280;
+mask._height = 400;
+mask._x = mask._y = 0;
+nameFld.text = ThisFirstName + "\n" + ThisLastName;

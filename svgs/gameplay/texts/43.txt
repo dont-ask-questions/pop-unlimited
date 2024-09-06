@@ -1,0 +1,29 @@
+1) Right click in this window and select 
+--- RECORDSEPARATOR ---
+Settings
+--- RECORDSEPARATOR ---
+.
+--- RECORDSEPARATOR ---
+2) Go to the 
+--- RECORDSEPARATOR ---
+Local Storage
+--- RECORDSEPARATOR ---
+ tab (folder icon).
+--- RECORDSEPARATOR ---
+3) Make sure 
+--- RECORDSEPARATOR ---
+Never Ask Again
+--- RECORDSEPARATOR ---
+ is NOT checked and
+--- RECORDSEPARATOR ---
+    move the storage size slider to 
+--- RECORDSEPARATOR ---
+100 KB or higher
+--- RECORDSEPARATOR ---
+.
+--- RECORDSEPARATOR ---
+4) Click 
+--- RECORDSEPARATOR ---
+close
+--- RECORDSEPARATOR ---
+ AND TRY SAVING YOUR GAME.

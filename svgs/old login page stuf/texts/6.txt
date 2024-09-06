@@ -1,0 +1,3 @@
+That password was incorrect, you can try 
+--- RECORDSEPARATOR ---
+again in      seconds.

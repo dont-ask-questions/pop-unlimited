@@ -1,0 +1,7 @@
+An error while 
+--- RECORDSEPARATOR ---
+connecting to 
+--- RECORDSEPARATOR ---
+database occured. 
+--- RECORDSEPARATOR ---
+Try a bit later
