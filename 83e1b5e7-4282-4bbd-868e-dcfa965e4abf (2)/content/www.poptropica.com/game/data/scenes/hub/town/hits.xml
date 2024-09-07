@@ -1,0 +1,55 @@
+<hits>
+	<hit id="hay" color="0xAEB0A1" platform="true">
+		<component type="platform">
+		</component>
+	</hit>
+	
+	<hit id="linoleum" color="0x996666" platform="true">
+		<component type="platform">
+		</component>
+	</hit>
+	
+	<hit id="cobble" color="0x00ff00" platform="true">
+		<component type="platform">
+		</component>
+	</hit>
+	
+	<hit id="blimpPlatform" color="0x330099" platform="true">
+		<component type="platform">
+		</component>
+	</hit>
+	
+	<hit id="rope" color="0xBA1FE0" platform="true">
+		<component type="platform">
+		<stickToPlatforms>true</stickToPlatforms>
+		</component>
+	</hit>
+	
+	<hit id="wood_plank" color="0x996600" platform="true">
+		<component type="platform">
+		</component>
+	</hit>
+	
+	<hit id="metal" color="0x80C8F1" platform="true">
+		<component type="platform">
+		</component>
+	</hit>
+	
+	<hit id="grass" color="0x0033FF" platform="true">
+		<component type="platform">
+		</component>
+	</hit>
+	
+	<hit id="bounce" color="0xff0000" platform="true">
+		<component type="bounce">
+			<velocity>
+				<x>0</x>
+				<y>-800</y>
+			</velocity>
+		</component>
+	</hit>
+	
+	<hit id="climb">
+		<component type="climb"/>
+	</hit>
+</hits>

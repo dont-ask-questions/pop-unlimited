@@ -1,0 +1,24 @@
+<npcs>
+	<npc id="wheelGuy">
+		<skin>
+			<gender>male</gender>
+			<skinColor>0xd2aa72</skinColor>
+			<hairColor>0x999999</hairColor>
+			<eyeState>squint</eyeState>
+			<mouth>5</mouth>
+			<facial>daily_spin</facial>
+			<hair>daily_spin</hair>
+			<pants>daily_spin</pants>
+			<overshirt>daily_spin</overshirt>
+		</skin>
+		<position>
+			<x>220</x>
+			<y>624</y>
+		</position>
+		<range>
+			<x>0</x>
+			<y>0</y>
+		</range>
+		<direction>right</direction>
+	</npc>
+</npcs>

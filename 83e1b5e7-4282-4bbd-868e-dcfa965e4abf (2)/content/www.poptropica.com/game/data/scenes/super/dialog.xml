@@ -1,0 +1,23 @@
+<dialogs>
+	<character id="player">
+		<statement id="youreaggressiveandyougoteveryonearrested">I do all the work and *you* get the medallion??</statement>
+		<statement id="youreaggressiveyougoteveryonearrestedandnedvotedyouoff">First you get me voted off from that show, NOW you take all the credit AFTER I WASTE MY BLOOD, SWEAT, AND TEARS DEFEATING EVERY SINGLE ONE OF THEM. *you push him to the wall* You really are a fool, you know that?</statement>
+		<statement id="youraggressiveandheandbettygotyouvotedoff">First you two get me voted off from that show, NOW you take all the credit AFTER I WASTE MY BLOOD, SWEAT, AND TEARS DEFEATING EVERY SINGLE ONE OF THEM. *you push him to the wall* You're just like your criminal sister, you know that?</statement>
+		<statement id="fine">Alright, fine. Go on.</statement>
+		<statement id="youraggressiveandhegaveyouthemedallion">Yeah, yeah, whatever. I still hate you.</statement>
+	</character>
+	
+	<character id="ned">
+		<statement id="youraggressiveandyougoteveryonearrested">Please don't hurt me! I'll give you the medallion, you just need to do me a favor, I promise!</statement>
+		<statement id="youraggressiveandyougoteveryonearrestedplushevotedyouoff">Woah, woah, woah, woah, that was just a game! I'll give you the medallion over a hot dog, just calm down!</statement>
+		<!--and then his dialogue-->
+	</character>
+	
+	<character id="boy">
+
+	</character>
+	
+	<character id="npc">
+
+    </character>
+</dialogs>

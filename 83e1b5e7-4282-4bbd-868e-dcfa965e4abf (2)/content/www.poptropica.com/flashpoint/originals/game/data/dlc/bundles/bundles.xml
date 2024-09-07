@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<target name="-build-bundle-files">
+		<bundle
+			id="beach1"
+			active="true"
+			free="true"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.beach1"
+			file="bundle.beach1">
+		</bundle>
+		
+		<bundle
+			id="beach2"
+			active="true"
+			free="true"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.beach2"
+			file="bundle.beach2">
+		</bundle>
+		
+		<bundle
+			id="halloweenMO2016"
+			active="true"
+			free="true"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.halloweenMO2016"
+			file="bundle.halloweenMO2016">
+		</bundle>
+		
+		<bundle
+			id="halloween2016"
+			active="true"
+			free="true"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.halloween2016"
+			file="bundle.halloween2016">
+		</bundle>
+
+		<bundle
+			id="fall2016outfits"
+			active="true"
+			free="true"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.fall2016outfits"
+			file="bundle.fall2016outfits">
+		</bundle>
+			
+		<bundle
+			id="lostexpedition1"
+			active="true"
+			free="true"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.lostexpedition1"
+			file="bundle.lostexpedition1">
+		</bundle>
+		
+		<bundle 
+			id="lostexpedition2"
+			active="true"
+			free="true"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.lostexpedition2"
+			file="bundle.lostexpedition2">
+		</bundle>
+		
+		<bundle 
+			id="winter2"
+			active="true"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.winter2"
+			file="bundle.winter2">
+		</bundle>
+		
+		<bundle 
+			id="winter1"
+			active="true"
+			free="true"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.winter1"
+			file="bundle.winter1">
+		</bundle>
+		
+		<bundle 
+			id="falloutfits"
+			active="true"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.falloutfits"
+			file="bundle.falloutfits">
+		</bundle>
+		
+		<bundle 
+			id="pets"
+			active="true"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.pets"
+			file="bundle.pets">
+		</bundle>
+		
+		<bundle 
+			id="greekgods"
+			active="true"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.greekgods"
+			file="bundle.greekgods">
+		</bundle>
+		
+		<bundle 
+			id="hoa"
+			active="true"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.hoa"
+			file="bundle.hoa">
+		</bundle>
+		
+		<bundle 
+			id="tasty"
+			active="false"
+			free="true"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.tasty"
+			file="bundle.tasty">
+		</bundle>
+		
+		<bundle 
+			id="spooky"
+			active="false"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.spooky"
+			file="bundle.spooky">
+		</bundle>
+		
+		<bundle 
+			id="entertainer"
+			active="false"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.entertainer"
+			file="bundle.entertainer">
+		</bundle>
+		
+		<bundle 
+			id="wrappedup"
+			active="false"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.wrappedup"
+			file="bundle.wrappedup">
+		</bundle>
+		
+		<bundle 
+			id="dangerousagents"
+			active="true"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.dangerousagents"
+			file="bundle.dangerousagents">
+		</bundle>
+		
+		<bundle 
+			id="athletes"
+			active="true"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.athletes"
+			file="bundle.athletes">
+		</bundle>
+		
+		<bundle 
+			id="spaceexplorers"
+			active="true"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.spaceexplorers"
+			file="bundle.spaceexplorers">
+		</bundle>
+		
+		<bundle 
+			id="monkeys"
+			active="false"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.monkeys"
+			file="bundle.monkeys">
+		</bundle>
+		
+		<bundle 
+			id="motm"
+			active="true"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.motm"
+			file="bundle.motm">
+		</bundle>
+		
+		<bundle 
+			id="vikingfeast"
+			active="true"
+			free="true"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.vikingfeast"
+			file="bundle.vikingfeast">
+		</bundle>
+		
+		<bundle 
+			id="fairyfriends"
+			active="true"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.fairy"
+			file="bundle.fairyfriends">
+		</bundle>
+		
+		<bundle 
+			id="royalball"
+			active="true"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.royal"
+			file="bundle.royalball">
+		</bundle>
+
+		<bundle 
+			id="predator"
+			active="true"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.predator"
+			file="bundle.predator">
+		</bundle>
+		
+		<bundle 
+			id="galactichotdogs"
+			active="true"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.galactichotdogs"
+			file="bundle.galactichotdogs">
+		</bundle>
+
+		<bundle 
+			id="arabian"
+			active="false"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.arabian"
+			file="bundle.arabian">
+		</bundle>
+		
+		<bundle 
+			id="knights"
+			active="true"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.knights"
+			file="bundle.knights">
+		</bundle>
+		
+		<bundle 
+			id="shrinkray"
+			active="true"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.shrinkray"
+			file="bundle.shrinkray">
+		</bundle>
+		
+		<bundle 
+			id="pie"
+			active="true"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.pie"
+			file="bundle.pie">
+		</bundle>
+		
+		<bundle 
+			id="poptropicon"
+			active="true"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.poptropicon"
+			file="bundle.poptropicon">
+		</bundle>
+		
+		<bundle 
+			id="survival"
+			active="true"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.survival"
+			file="bundle.survival">
+		</bundle>
+		
+		<bundle 
+			id="atlantis"
+			active="true"
+			free="false"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.atlantis"
+			file="bundle.atlantis">
+		</bundle>
+		
+		<bundle 
+			id="halloween1"
+			active="true"
+			free="true"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.halloween1"
+			file="bundle.halloween1">
+		</bundle>
+			
+		<bundle 
+			id="halloween2"
+			active="true"
+			free="true"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.halloween2"
+			file="bundle.halloween2">
+		</bundle>
+			
+		<bundle 
+			id="halloween3"
+			active="true"
+			free="true"
+			packagedFileState="localCompressed"
+			storeId="com.pearsoned.poptropica.bundles.halloween3"
+			file="bundle.halloween3">
+		</bundle>
+		
+	</target>
+</project>

@@ -1,0 +1,20 @@
+<!-- AS2 Poptropolis -->
+<progress>
+	<island>tribal</island>
+	<events>
+		<event>started</event>
+		<event>talkedToMc</event>
+		<event>startedGames</event>
+		<event>archeryCompleted</event>
+		<event>divingCompleted</event>
+		<event>hurdlesCompleted</event>
+		<event>javelinCompleted</event>
+		<event>longJumpCompleted</event>
+		<event>poleVaultCompleted</event>
+		<event>shotPutCompleted</event>
+		<event>tripleJumpCompleted</event>
+		<event>powerLiftingCompleted</event>
+		<event>skiingCompleted</event>
+		<event>gotItem_medal_poptropolis</event>
+	</events>
+</progress>

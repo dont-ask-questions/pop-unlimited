@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE communicationConfig SYSTEM "communicationConfig.dtd">
+<DLCData>
+<item>
+  <file>bundle.beach1</file>
+  <checkSum>493b0a99f6f21b6eaa41048d338e9792</checkSum>
+</item>
+<item>
+  <file>bundle.beach2</file>
+  <checkSum>42a5e25e90044902a9bb33382ea5ccf1</checkSum>
+</item>
+<item>
+  <file>bundle.halloweenMO2016</file>
+  <checkSum>c2d90a7837ca02fed642a7123ce5be21</checkSum>
+</item>
+<item>
+  <file>bundle.halloween2016</file>
+  <checkSum>3a3bef0ab45ca1a65707c8a4684f3b21</checkSum>
+</item>
+<item>
+  <file>bundle.fall2016outfits</file>
+  <checkSum>a51d0201571049c90e9bce72f15e25d9</checkSum>
+</item>
+<item>
+  <file>bundle.lostexpedition1</file>
+  <checkSum>d6fbeed978f39f3f9d4140bd12203b64</checkSum>
+</item>
+<item>
+  <file>bundle.lostexpedition2</file>
+  <checkSum>7c6c4206737b5ebdb7685c900b7c74a8</checkSum>
+</item>
+<item>
+  <file>bundle.winter2</file>
+  <checkSum>c740289292da1ed161e2b3422c7a31bf</checkSum>
+</item>
+<item>
+  <file>bundle.winter1</file>
+  <checkSum>565af324481a578be723a4e9951cc0b6</checkSum>
+</item>
+<item>
+  <file>bundle.falloutfits</file>
+  <checkSum>d8225b457ef6c13123ef9511a7f9769b</checkSum>
+</item>
+<item>
+  <file>bundle.pets</file>
+  <checkSum>2df7988eea28f2989a426e7bf882d689</checkSum>
+</item>
+<item>
+  <file>bundle.greekgods</file>
+  <checkSum>bda9e0699487a90e2a27e0b7b8a208ae</checkSum>
+</item>
+<item>
+  <file>bundle.hoa</file>
+  <checkSum>c955d9a2fdf73e9a2840bcd4e868432f</checkSum>
+</item>
+<item>
+  <file>bundle.tasty</file>
+  <checkSum>71a3132da51c2ede992832608619217e</checkSum>
+</item>
+<item>
+  <file>bundle.spooky</file>
+  <checkSum>21af4904ab457c597b7441d1eab0b640</checkSum>
+</item>
+<item>
+  <file>bundle.entertainer</file>
+  <checkSum>c9940d97aeb8396c9a4463af4e3a2ec5</checkSum>
+</item>
+<item>
+  <file>bundle.wrappedup</file>
+  <checkSum>05be1ea4fc41a478d92e58124fb06044</checkSum>
+</item>
+<item>
+  <file>bundle.dangerousagents</file>
+  <checkSum>0103cf0a95f2dd30220840a3a8bf4809</checkSum>
+</item>
+<item>
+  <file>bundle.athletes</file>
+  <checkSum>49b125dd4614e8eceb30438084ff55e0</checkSum>
+</item>
+<item>
+  <file>bundle.spaceexplorers</file>
+  <checkSum>9b6e5c860e2b71b8794e3c391924ec69</checkSum>
+</item>
+<item>
+  <file>bundle.monkeys</file>
+  <checkSum>9db8db95dce10da18d8db967ef84da00</checkSum>
+</item>
+<item>
+  <file>bundle.motm</file>
+  <checkSum>e25b1089921888696ded979505d0cd64</checkSum>
+</item>
+<item>
+  <file>bundle.vikingfeast</file>
+  <checkSum>14c5dd58f5a738b9f5d9116d61f16a63</checkSum>
+</item>
+<item>
+  <file>bundle.fairyfriends</file>
+  <checkSum>77f26bfd1f32dbd90caae27a0fb32d39</checkSum>
+</item>
+<item>
+  <file>bundle.royalball</file>
+  <checkSum>f4f1a9fd08159d41b042ff370ee8d6b7</checkSum>
+</item>
+<item>
+  <file>bundle.predator</file>
+  <checkSum>4978dec6014be0c590943248042ad98d</checkSum>
+</item>
+<item>
+  <file>bundle.galactichotdogs</file>
+  <checkSum>883cedd2c39d1921947b79b7522d645e</checkSum>
+</item>
+<item>
+  <file>bundle.arabian</file>
+  <checkSum>86e8e1473b32118372a1c2a74d2d6da7</checkSum>
+</item>
+<item>
+  <file>bundle.knights</file>
+  <checkSum>fce1630c3a1d4c7ed5f5a38f95126b6b</checkSum>
+</item>
+<item>
+  <file>bundle.shrinkray</file>
+  <checkSum>4179e608b0299501bbbcb39a9729db5d</checkSum>
+</item>
+<item>
+  <file>bundle.pie</file>
+  <checkSum>4454aa238a501887f87e1c1c89698172</checkSum>
+</item>
+<item>
+  <file>bundle.poptropicon</file>
+  <checkSum>34c45dacff1b3551001234a84320ac6c</checkSum>
+</item>
+<item>
+  <file>bundle.survival</file>
+  <checkSum>e068dd4de40a6fe30bc2fbd480bf7050</checkSum>
+</item>
+<item>
+  <file>bundle.atlantis</file>
+  <checkSum>dbe7432ab657a2d592d6315dddbfc9b8</checkSum>
+</item>
+<item>
+  <file>bundle.halloween1</file>
+  <checkSum>3367156c8506631892089ca092e75c3d</checkSum>
+</item>
+<item>
+  <file>bundle.halloween2</file>
+  <checkSum>afe816a644d14562154842b7b75199b3</checkSum>
+</item>
+<item>
+  <file>bundle.halloween3</file>
+  <checkSum>e698a0e744c1acf17dc52c2128a421a6</checkSum>
+</item>
+</DLCData>

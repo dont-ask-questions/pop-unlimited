@@ -1,0 +1,19 @@
+<hits>
+	<hit id="carpet" color="0x00ff00" platform="true">
+		<component type="platform">
+		<stickToPlatforms>true</stickToPlatforms>
+		</component>
+	</hit>
+	
+	<hit id="wood_plank" color="0x996666" platform="true">
+		<component type="platform">
+		<stickToPlatforms>true</stickToPlatforms>
+		</component>
+	</hit>
+	
+	<hit id="linoleum" color="0x00CCFF" platform="true">
+		<component type="platform">
+		<stickToPlatforms>true</stickToPlatforms>
+		</component>
+	</hit>
+</hits>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Poptropica</title>
+        <style>
+            body { background-color: #139ffd; }
+            object {
+                border-width: 0;
+                position: absolute;
+                left: calc(50vw - 480px);
+                top: calc(50vh - 320px);
+            }
+
+            .border { width: 1003px; }
+            .border.parent {
+                position: absolute;
+                left: calc(50vw - 502px);
+                top: calc(50vh - 94px - 320px); /* Entire top, then half of game screen. */
+            }
+            .border.top {
+                background: url("images/banner_plain.gif");
+                height: 94px;
+            }
+            .border.middle {
+                background: url("images/middle.gif");
+                height: 640px;
+            }
+            .border.bottom {
+                background: url("images/footer.gif");
+                height: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="border parent">
+            <div class="border top"></div>
+            <div class="border middle"></div>
+            <div class="border bottom"></div>
+        </div>
+        <object type="application/x-shockwave-flash" data="ShellLoader.swf" width="960" height="640" id="flashContent">
+            <param name="quality" value="high">
+            <param name="bgcolor" value="#000000">
+            <param name="play" value="true">
+            <param name="loop" value="true">
+            <param name="wmode" value="gpu">
+            <param name="scale" value="showall">
+            <param name="menu" value="true">
+            <param name="devicefont" value="false">
+            <param name="salign" value="">
+            <param name="allowscriptaccess" value="always">
+            <param name="base" value="http://www.poptropica.com/game/">
+            <param name="flashvars" value="shellURL=/game/Shell.swf?island">
+        </object>
+        <form method="POST" action="/base.php">
+            <input type="hidden" name="room">
+            <input type="hidden" name="island">
+            <input type="hidden" name="startup_path">
+        </form>
+        <script>
+
+function dbug(message) {
+    console.log(message);
+}
+
+function POSTToBase(...args) {
+    const form = document.forms[0];
+
+    if(form.children.length === args.length) {
+        for(let i = 0; i < args.length; i++)
+            form.children[i].setAttribute("value", args[i]);
+
+        form.submit();
+    }
+}
+
+function showWrapper() { }
+function hideWrapper() { }
+function unhideWrapper() { }
+function clearWrapper() { }
+function refreshWrapper() { }
+function sendTrackingPixels() { }
+function playTheaterVideo() { }
+function tutorialCompleted() { }
+function GATrackEvent() { }
+function GATrackPageView() { }
+function ga() { }
+function sendToComScoreBeacon() { }
+function cookieGetCookie() { return ""; }
+function cookieSetCookie() { }
+
+        </script>
+    </body>
+</html>

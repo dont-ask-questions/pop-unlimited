@@ -1,0 +1,58 @@
+<dialogs>
+	<character id="player">
+		<statement id="contestantwithyouwon">Hey, good job.</statement>
+		<statement id="contestantwithyouwonandyouraggressive">You're lucky I'm not out of the show because of you.</statement>
+		<statement id="youwonandyouraggressive">Told you I'd win, loser.</statement>
+		<statement id="youwon">Hey, better luck next time.</statement>
+		<statement id="idfreakingknow">I'll think about it.</statement>
+		<statement id="youwonyouraggressiveandyourwithhop">Guess who's the man/lady/boss now?</statement>
+
+
+
+		<statement id="someoneelsewon">Can't believe I lost.</statement>
+		<statement id="youlostandyourwithhelenshegaveyouadvice">Thanks, Helen...</statement>
+		<statement id="youlostandyourwith"></statement>
+
+
+		<statement id="contestantvotedwithyou">Thanks for having my back.</statement>
+	</character>
+
+		<character id="director">
+		<statement id="hewonandyoubeatspy">You foiled my plan to steal everyone's hair but I beat you in the last challenge.</statement>
+	</character>
+
+		<character id="hiker">
+		<statement id="wellyouhadfun">Well, we all had fun and thats all that matters!</statement>
+		<statement id="dontworry">Hey, it's alright! You're still a winner!</statement>
+	</character>
+
+	<character id="brownie">
+		<statement id="youlosttoher">...Would you like a cookie?</statement>
+	</character>
+
+	<character id="rickie">
+		<statement id="youlosttoher">...Wanna join my band?</statement>
+	</character>
+
+	<character id="idkwhoyourwith">
+		<statement id="ineedtotalktoyou">I need to have a word with you.</statement>
+		<statement id="thanks"></statement>
+	</character>
+
+		<character id="idkwhoyourwith2">
+		<statement id="wellyouhadfun">How am I gonna get a brand new car now...</statement>
+		<statement id="dontworry">Hey, it's alright! You're still a winner!</statement>
+	</character>
+
+		<character id="idkwhoyourwith">
+
+	</character>
+
+
+	<character id="contestantcallingyou">
+		<statement id="followme">You and I, my cabin. Now.</statement>
+	</character>
+
+	
+	
+</dialogs>

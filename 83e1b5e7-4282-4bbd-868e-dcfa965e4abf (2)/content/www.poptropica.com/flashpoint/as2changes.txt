@@ -1,0 +1,31 @@
+AS2 Changes - These are from the as2 curation, along with some newer changes.
+
+  "/avatar_body.swf" 
+   - Removed visual quirks that appeared when a character's outfit was changed. The "undershirt" and "underpants" movie clips will be made invisible after a character's outfit fully loads for the first time.
+   - The "bellyDots" movie clip's "flags" variable will be deleted once it becomes unnecessary. Some other small optimizations were made as well.
+  "/char.swf" 
+   - A conditional statement in the first frame's "targetControl" function now checks if a character's status is equal to "climbDown" when tracking movieclips.
+   - An "if" statement in the first frame of the file was modified to remove a mouse listener that was added to the player character when they were in a multiplayer scene.
+   - One "if" statement was removed from the code of the "avatar" movie clip's "partLoaded" function. This was part of the bugfix that hides characters' default pants when they are no longer necessary.
+  "/scenes/islandVillain/sceneAdGroundH25.swf",
+  "/scenes/islandVillain/sceneOilControlRoom.swf",
+  "/scenes/islandVillain/sceneVillainMain.swf" - Door data for the oil control room has been fixed. Previously it used regular door data rather than data specifically for advertisement transition scenes.
+  "/scenes/islandEarly/sceneMuseum.swf" - A bug that caused the Counterfeit Island cottage key item to be added to Early Poptropica Island's inventory has been fixed. The bug most likely did not occur to registered accounts in the official game.
+  "/popups/bignate_hangman.swf" - Big Nate Island's hangman popup now changes character asset transparency rather than toggling visibility. This is because toggling visibility causes some character assets to appear when they shouldn't.
+  "/popups/West/photography.swf" - The second frame of Wild West Island's photography minigame file now waits for the player character to load before converting them to a bitmap asset.
+  "/pop_stats.swf"
+    - The "ConfirmClip" sprite's code now checks if the user is registered, not unregistered, when determining if they can purchase an item.
+    - Frame five of the file does not retrieve cached store data.
+  "/save_image.php" - This file has been recreated. Unlike the original file, it opens the image in a new tab instead of prompting the user to download the image.
+  "/gameplay.swf"
+    - The "btnSave" placeobject of sprite 501 frame 1 in the "/gameplay.swf" file has been moved 10,000 pixels upwards from where it originally was. It should not be clickable in normal gameplay.
+    - Font "Chuck2" was repaired to an older version, as it was squished in the text boxes.
+    - A little bit of code was added to frame 26 that removes unused vendor cart movie clips from scenes. The code is from later versions of the same file.
+  "/save_image.php" - This file was recreated. Unlike the original file, it opens the image in a new tab instead of prompting the user to download the image.
+  "/scenes/Global/sceneGlobalBlimpGame5.swf"
+    - The "entity.character.Character" class' "convertFromNpcFormat" function's code was modified because nearly all of it was programmed incorrectly.
+    - Extra code was added to the "entity.character.Character" class' "updateLook" function. It originally did not make the game load a character's updated outfit.
+    - The "entity.character.Look" class was renamed to "entity.character.Look2" to prevent code conflicts with the "/popups/BlimpGame/dialog.swf" file.
+
+  "/scenes/islandSuper/sceneComic.swf" - Ned Noodlehead will hold a hotdog immediately after being given one.
+- Fixed small line of clear pixels in game border frame (framework.swf)

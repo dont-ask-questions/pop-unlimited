@@ -1,0 +1,18 @@
+<dialogs>
+	<character id="owner">
+		<statement id="welcome" triggerEvent="completeEvent" triggerEventArgs="talked_to_shop_owner">Welcome to the Shop. How may I help you?</statement>
+    	
+    	<statement id="special">Ah, [PlayerName]. I've saved something special for you.</statement>
+    	<statement id="social">[PlayerName]! Is this a social visit?</statement>
+    	
+    	<statement>Browse the Card Packs on the left to see what they contain on the right.</statement>
+    	<statement event="bundles_all_purchased">Come again, soon.</statement>
+    	
+    	<statement id="recommend">Might I recommend the [BundleName]? It's very popular.</statement>
+    	
+    	<statement id="purchase">An excellent choice! You have impeccable taste.</statement>
+    	<statement id="free" triggerEvent="triggerEvent" triggerEventArgs="proud_pose">A little something for my VIP customers.</statement>
+    
+    	<statement id="break">You break it, you buy it.</statement>
+    </character>
+</dialogs>

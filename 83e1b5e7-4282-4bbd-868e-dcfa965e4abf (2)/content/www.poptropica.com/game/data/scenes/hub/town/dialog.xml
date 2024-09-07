@@ -1,0 +1,160 @@
+<dialogs>
+	<character id="tailor">
+		<statement>Hi! Step inside to change your look.</statement>
+		<statement id="hurray">Well done!</statement>
+    </character>
+    
+	<!-- <character id="reporter">
+		<statement>I'm on the lookout for Poptropica news.</statement>
+		<statement id="secrets">Extra! Extra! Daily Pop secrets revealed!</statement>
+		<statement id="medallion">Extra! Extra! [PlayerName] completes another island!"</statement>
+		<statement id="random1">This viewfinder lets me see the Daily Pop. Got to keep up on the news!</statement>
+		<statement id="random2">What a scoop! You saw it here first!</statement>
+		<statement id="random3">Wait until my readers find out about this!</statement>
+		<statement id="random4">Did you see? I can't believe what they're up to now!</statement>
+    </character> -->
+    
+    <character id="bundleNpc">
+		<statement>The shop has lots of fun stuff. Step inside to see what's new.</statement>
+    </character>
+    
+    <character id="player">
+    	<statement id="what_race">Meet you where?</statement>
+    	<statement id="thanks1">Thanks everybody, and thank you, Amelia!</statement>
+		<statement id="thanks2">What an adventure!</statement>
+    </character>
+    
+    <character id="amelia">
+    	
+    	<!-- dialog for new player -->    	
+    	<statement event="new_user" link="start_tutorial">Do you want to learn how to play Poptropica?</statement>
+    	<statement link="start_tutorial">Do you want to learn how to play Poptropica?</statement>
+    	<statement event="tutorial_started" link="start_tutorial2">Ready to go back and win that race?</statement>
+		<statement event="ftue_tutorial_completed" link="questions_completed">Greetings [Player Name]! How can I help?</statement>
+		
+		<!-- dialog for player that hasn't started tutorial -->
+		<conversation id="start_tutorial">
+			<exchange>
+				<question id="welcome_yes" triggerEvent="triggerEvent" triggerEventArgs="start_race">Yes!</question>
+			</exchange>
+			<exchange>
+				<question id="welcome_no" triggerEvent="triggerEvent" triggerEventArgs="no_has_questions">No, I have a few questions.</question>
+				<answer link="questions_incomplete">OK, what can I help with?</answer>
+			</exchange>
+		</conversation>
+		
+		<conversation id="start_tutorial2">
+			<exchange>
+				<question id="welcome_yes" triggerEvent="triggerEvent" triggerEventArgs="start_race">Yes, let's go!</question>
+			</exchange>
+			<exchange>
+				<question id="welcome_no" triggerEvent="triggerEvent" triggerEventArgs="no_has_questions">Not yet, I have a few questions.</question>
+				<answer link="questions_incomplete2">OK, what can I help with?</answer>
+			</exchange>
+		</conversation>
+		
+		<!-- questions for players that has NOT finished tutorial -->
+		
+		<conversation id="questions_incomplete">
+			<exchange>
+				<question>What's Poptropica about?</question>
+				<answer link="poptropica_is_new">Poptropica is about adventure!</answer>
+			</exchange>
+			<exchange>
+				<question>What else can I do?</question>
+				<answer link="what_else">Well, what are you interested in?</answer>
+			</exchange>
+			<exchange>
+				<question>I'm ready to go!</question>
+				<answer triggerEvent="triggerEvent" triggerEventArgs="start_race, true">Great, I'll meet you at the race!</answer>
+			</exchange>
+		</conversation>
+		
+		<conversation id="questions_incomplete2">
+			<exchange>
+				<question>What's Poptropica about?</question>
+				<answer link="poptropica_is_new">Poptropica is about adventure!</answer>
+			</exchange>
+			<exchange>
+				<question>What else can I do?</question>
+				<answer link="what_else">Well, what are you interested in?</answer>
+			</exchange>
+			<exchange>
+				<question triggerEvent="triggerEvent" triggerEventArgs="start_race, true">I'm ready to go!</question>
+			</exchange>
+		</conversation>
+
+		<!-- questions for players that has HAS finished tutorial -->
+		
+		<conversation id="questions_completed">
+			<exchange>
+				<question>I'm ready for more adventures!</question>
+				<answer>Fantastic, just hop aboard the blimp to choose your next island.</answer>
+			</exchange>
+			<exchange>
+				<question>Is there more than just adventures?</question>
+				<answer link="what_else">Of course. What are you interested in?</answer>
+			</exchange>
+		</conversation>	
+		
+		<statement id="poptropica_is_new">Mystery, action, comedy, drama -- you name it, we've got it!</statement>
+		<statement id="want_to_save">Greetings [Player Name]! Would you like to save your progress?</statement>
+
+		<!-- Is there more? (Browser & Mobile specific)-->
+		
+		<!-- End of FTUE island -->
+		<statement id="thanks3">But this is just the beginning!</statement>
+
+	</character>
+	
+	<character id="adventurer">
+		<statement link="answer">Do you want to go on more adventures?</statement>
+		
+		<conversation id="answer">
+			<exchange>
+				<question triggerEvent="triggerEvent" triggerEventArgs="said_more_to_adventure">I sure do!</question>
+			</exchange>
+			<exchange>
+				<question triggerEvent="triggerEvent" triggerEventArgs="no_to_adventure, true">Not right now.</question>
+				<answer>Let me know if you change your mind.</answer>
+			</exchange>
+		</conversation>
+		
+		<statement id="to_map" triggerEvent="triggerEvent" triggerEventArgs="show_blimp_tutorial">I'll show you where to go!</statement>
+		
+		<statement id="to_island" link="answer_island">[Island Name] Island is great for newer players. Want to go there now?</statement>
+		<conversation id="answer_island">
+			<exchange>
+				<question triggerEvent="triggerEvent" triggerEventArgs="said_yes_to_island">Heck yes!</question>
+			</exchange>
+			<exchange>
+				<question triggerEvent="triggerEvent" triggerEventArgs="no_to_island, true">Maybe later.</question>
+				<answer>Let me know if you change your mind.</answer>
+			</exchange>
+		</conversation>
+	</character>
+	
+	<character id="officiate">
+		<statement id="welcome1">Congratulations on winning the race!</statement>
+		<statement id="award">It is my distinct honor to present to [Player Name]...</statement>
+		<statement id="award2">The Island Medallion!</statement>
+    </character>
+    
+    <character id="wheelGuy">
+    	<statement id="not_registered" link="show">Sorry! You need to save your game to spin the wheel.</statement>
+    	<statement id="show" link="how">Would you like me to show you how?</statement>
+		
+		<conversation id="how">
+			<exchange>
+				<question>Yes please!</question>
+				<answer triggerEvent="triggerEvent" triggerEventArgs="play_save_tutorial">Not a problem.</answer>
+			</exchange>
+			<exchange>
+				<question>Maybe later.</question>
+				<answer triggerEvent="triggerEvent" triggerEventArgs="decline_to_save">No pressure, but we can't give you prizes without an account to put them in.</answer>
+			</exchange>
+		</conversation>
+		<statement  triggerEvent="triggerEvent" triggerEventArgs="open_wheel" id="spin">Spin the wheel and win!</statement>
+		<statement id="nospin">Come back tomorrow to spin again!</statement>
+    </character>
+</dialogs>

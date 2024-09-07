@@ -1,0 +1,23 @@
+<dialogs>
+	<character id="player">
+		<statement id="dontUseHammer">I should be careful! It'd be easy to break these mirrors with the hammer.</statement>
+		<statement id="enslaveRingmaster" link="birdboy" linkEntityId="ringmaster">Raven, stop! Do you remember all those years ago?</statement>
+		<statement id="neverHurt" link="wontHurt" linkEntityId="ringmaster">Yes, that's you! Why'd you make all this mess?</statement>
+		<statement id="believeChicken" link="cluckChicken" linkEntityId="ringmaster">I'm sorry about what happened to you, but we don't have to do this!</statement>
+		<statement id="freeCages" triggerEvent="triggerEvent" triggerEventArgs="fadeBlack">Hey, it's not too late, they'll understand. Let's free everyone from their cages and turn all the carnies back.</statement>
+	</character>
+	<character id="ringmaster">
+		<statement id="tauntstart" triggerEvent="triggerEvent" triggerEventArgs="startGame">You'll never catch me!</statement>
+		<statement id="taunt1" triggerEvent="triggerEvent" triggerEventArgs="endTaunt">You'll never catch me!</statement>
+		<statement id="taunt2" triggerEvent="triggerEvent" triggerEventArgs="endTaunt">This town will pay for what it did to me!</statement>
+		<statement id="taunt3" triggerEvent="triggerEvent" triggerEventArgs="endTaunt">Your soul belongs to me!</statement>
+		<statement id="becomeSlave" triggerEvent="triggerEvent" triggerEventArgs="becomeSlave">There is nowhere to hide! Become my slave!</statement>
+		<statement id="birdboy" link="neverHurt" linkEntityId="player">B-Bird Boy?</statement>
+		<statement id="theytreatedmebadly" link="believeChicken" linkEntityId="player">But they all treated me badly and framed me for causing the fire...</statement>
+		<statement id="sorry" triggerEvent="triggerEvent" triggerEventArgs="actChicken"> I... I... </statement>
+		
+	</character>
+	<character id="edgar">
+		<statement id="stoppedRingmaster" link="freeCages" linkEntityId="player">You got him back! </statement>
+	</character>
+</dialogs>

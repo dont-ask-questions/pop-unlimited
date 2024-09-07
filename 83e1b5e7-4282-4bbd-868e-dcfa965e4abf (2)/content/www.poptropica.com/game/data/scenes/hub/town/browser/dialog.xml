@@ -1,0 +1,112 @@
+<dialogs> <!-- BROWSER SPECIFIC -->
+
+    <character id="dj">
+    	<statement id="join">Hey, come join the party! You can chat, get cool outfits, and play games with other players in here!</statement>
+		<conversation id="dj_questions">
+			<exchange>
+				<question>What's a Common Room?</question>
+				<answer link="main_street">They're rooms where you can chat, play games, and make friends with other players.</answer>
+			</exchange>
+			<exchange>
+				<question>Can I play games and chat?</question>
+				<answer>You bet! When you're in a Common Room just click other players to challenge them to games or ask questions.</answer>
+			</exchange>
+			<exchange>
+				<question>Can I borrow costume parts?</question>
+				<answer>Yep! I've found some of my funkiest looks in common rooms. Some of the costumes you find in there are out of sight!</answer>
+			</exchange>
+			<exchange>
+				<question>Can I make friends?</question>
+				<answer link="friends">Totally! After you save your game, click on other players to add them as friends.</answer>
+			</exchange>
+		</conversation>
+		<statement id="main_street">You can find Common Rooms on the Main Street of most islands.</statement>
+		<statement id="friends">That way you can follow their far-out adventures in Poptropica.</statement>
+    </character>
+
+    <character id="amelia">
+
+		<!-- Is there more? DIFFERS ON BROWSER -->
+
+		<conversation id="what_else">
+			<exchange>
+				<question>Can I change how I look?</question>
+				<answer link="custom_looks">Of course! Creating fun looks is half the fun.</answer>
+			</exchange>
+			<exchange>
+				<question>Are there other players?</question>
+				<answer link="common_room">You bet, and the best place to find them is in Common Rooms.</answer>
+			</exchange>
+			<!-- 
+			<exchange>
+				<question>I want to build stuff!</question>
+				<answer link="try_realms">Realms is the place for you!</answer>
+			</exchange>
+			 -->
+		</conversation>
+
+		<statement id="custom_looks" link="anything_else_no_look">There are thousands of parts to choose from, your possibilities are endless.</statement>
+		<statement id="anything_else_no_look" link="else_no_look">Anything else you'd like to know?</statement>
+		<conversation id="else_no_look">
+			<exchange>
+				<question>Are there other players?</question>
+				<answer link="common_room">You bet, and the best place to find them is in Common Rooms.</answer>
+			</exchange>
+			<!-- 
+			<exchange>
+				<question>I want to build stuff!</question>
+				<answer link="try_realms">Realms is the place for you then!</answer>
+			</exchange>
+			 -->
+			<exchange>
+				<question>Tell me more about Poptropica, what's it all about?</question>
+				<answer triggerEvent="triggerEvent" triggerEventArgs="say_pop_is">Poptropica is about adventures, almost any kind you can think of!</answer>
+			</exchange>
+		</conversation>
+		
+		<statement id="common_room" triggerEvent="triggerEvent" triggerEventArgs="show_arcade">There's actually one just down the street.</statement>
+		<statement id="arcade_shown" link="anything_else_no_common">That's where you can chat, play games, and make friends with other players.</statement>
+		<statement id="anything_else_no_common" link="else_no_common">Anything else you'd like to know?</statement>
+		<conversation id="else_no_common">
+			<exchange>
+				<question>Can I change my look?</question>
+				<answer link="custom_looks">Of course! Creating custom looks is half the fun and you have lots of options.</answer>
+			</exchange>
+			<!-- 
+			<exchange>
+				<question>I want to build stuff!</question>
+				<answer link="try_realms">Realms is the place for you!</answer>
+			</exchange>
+			 -->
+			<exchange>
+				<question>Tell me more about Poptropica, what's it all about?</question>
+				<answer triggerEvent="triggerEvent" triggerEventArgs="say_pop_is">Poptropica is about adventures, almost any kind you can think of!</answer>
+			</exchange>
+		</conversation>
+		
+		<conversation id="try_realms">
+			<exchange>
+				<question>Yes, I'd like to try Realms now.</question>
+				<answer triggerEvent="triggerEvent" triggerEventArgs="open_realms">Great, I'll take you there.</answer>
+			</exchange>
+			<exchange>
+				<question>I'll look into Realms later.</question>
+				<answer link="else_no_realms">You can go there from the map when you're ready.</answer>
+			</exchange>
+		</conversation>
+		<conversation id="else_no_realms">
+			<exchange>
+				<question>Are there other players?</question>
+				<answer link="common_room">You bet, and the best place to find them is in Common Rooms.</answer>
+			</exchange>
+			<exchange>
+				<question>Can I change my look?</question>
+				<answer link="custom_looks">Of course! Creating custom looks is half the fun and you have lots of options.</answer>
+			</exchange>
+			<exchange>
+				<question>Tell me more about Poptropica, what's it all about?</question>
+				<answer triggerEvent="triggerEvent" triggerEventArgs="say_pop_is">Poptropica is about adventures, almost any kind you can think of!</answer>
+			</exchange>
+		</conversation>
+	</character>
+</dialogs>
