@@ -1,0 +1,20 @@
+<dialogs>
+    <character id="wheelGuy">
+    	<statement id="not_registered" link="show">Sorry! You need to save your game to spin the wheel.</statement>
+    	<statement id="show" link="how">Would you like me to show you how?</statement>
+		
+		<conversation id="how">
+			<exchange>
+				<question>Yes please!</question>
+				<answer triggerEvent="triggerEvent" triggerEventArgs="play_save_tutorial">Not a problem.</answer>
+			</exchange>
+			<exchange>
+				<question>Maybe later.</question>
+				<answer triggerEvent="triggerEvent" triggerEventArgs="decline_to_save">No pressure, but we can't give you prizes without an account to put them in.</answer>
+			</exchange>
+		</conversation>
+		
+		<statement triggerEvent="triggerEvent" triggerEventArgs="open_wheel" id="spin">Spin the wheel and get some loot!</statement>
+		<statement id="nospin">Replay islands to get extra loot. Right now. Why are you still here?</statement>
+    </character>
+</dialogs>

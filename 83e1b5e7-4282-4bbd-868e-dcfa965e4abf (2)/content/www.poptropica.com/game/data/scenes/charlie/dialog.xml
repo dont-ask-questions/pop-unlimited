@@ -1,0 +1,17 @@
+<dialogs>
+	<character id="player">
+		<statement tag="youraggressiveandgrandparentsgotyouvotedoff">Bold of you losers to assume I'm a tax payer. Especially after getting me voted off!</statement>
+	</character>
+	
+	<character id="grandparents">
+	<statement tag="youraggressiveandgrandparentsgotyouvotedoff">A very salty one indeed.</statement>
+	</character>
+	
+	<character id="boy">
+
+	</character>
+	
+	<character id="npc">
+
+    </character>
+</dialogs>

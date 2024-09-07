@@ -1,0 +1,13 @@
+<hints>
+<!-- Flashpoint hints -->
+<hint>Don't worry about saving your game! It will be saved automatically.</hint>
+<hint>You can open the developer console by pressing the ` key at any time!</hint>
+<hint platform="desktop">You can adjust the graphics quality and sound volume in the settings menu.</hint>
+
+<!-- Default hints
+<hint>If you get stuck on an island you can always come back to it later. Your progress will be saved!</hint>
+<hint>Tapping to jump will help you land more precisely.</hint>
+<hint platform="mobile">If you're having trouble in the game try out the tutorial by clicking the 'home' button.</hint>
+
+-->
+</hints>

@@ -1,0 +1,17 @@
+<dialogs>
+	<character id="player">
+		<statement tag="youraggressiveandhareandwidowgotyouvotedoff">Well well well, look who it is! The two morons who got me voted off, now they're sleeping just like wittle babies! Pathetic...</statement>
+	</character>
+	
+	<character id="ned">
+	
+	</character>
+	
+	<character id="boy">
+
+	</character>
+	
+	<character id="npc">
+
+    </character>
+</dialogs>

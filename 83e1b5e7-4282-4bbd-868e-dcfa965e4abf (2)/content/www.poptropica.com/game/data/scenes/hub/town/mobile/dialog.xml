@@ -1,0 +1,98 @@
+<dialogs> <!-- MOBILE SPECIFIC -->
+    
+    <character id="dj">
+    	<statement id="join">Hey, come join the party! You can chat, swap outfits, and play games with other players in here!</statement>
+    	<conversation id="dj_questions">
+			<exchange>
+				<question>Can I meet other players?</question>
+				<answer>You bet! Go inside and tap on other players to start chatting.</answer>
+			</exchange>
+			<exchange>
+				<question>Are there games to play?</question>
+				<answer link="versus_games">Once you're inside, just tap an arcade cabinet to start a game.</answer>
+			</exchange>
+			<exchange>
+				<question>Can I get new costume parts?</question>
+				<answer>I've found some of my funkiest looks from other players. Some of the costumes you see in there are out of sight!</answer>
+			</exchange>
+		</conversation>
+		<statement id="versus_games">You'll be matched with other players from around the world!</statement>
+    </character>
+
+    <character id="amelia">
+	
+		<!-- player has completed island -->
+
+		<statement id="island_popup_closed" link="good_luck">Well, I think you're ready for your next adventure. Hop aboard your blimp and see where the wind takes you!</statement>
+
+		<!-- Is there more? DIFFERS ON MOBILE-->
+
+		<conversation id="what_else">
+			<exchange>
+				<question>Can I change how I look?</question>
+				<answer link="custom_looks">Of course! Creating new looks is half the fun.</answer>
+			</exchange>
+			<exchange>
+				<question>Are there other players?</question>
+				<answer link="common_room">You bet, and the best place to find them is in the Arcade.</answer>
+			</exchange>
+			<exchange>
+				<question>Where can I get items?</question>
+				<answer triggerEvent="triggerEvent" triggerEventArgs="show_shop">You'll collect items when you explore islands, but special items are found in the store.</answer>
+			</exchange>
+		</conversation>
+
+		<statement id="custom_looks" link="anything_else_no_look">There are thousands of parts to choose from. The possibilities are endless.</statement>
+		<statement id="anything_else_no_look" link="else_no_look">Anything else you'd like to know?</statement>
+		<conversation id="else_no_look">
+			<exchange>
+				<question>Are there other players?</question>
+				<answer link="common_room">You bet, and the best place to find them is in the Arcade.</answer>
+			</exchange>
+			<exchange>
+				<question>Where can I get items?</question>
+				<answer triggerEvent="triggerEvent" triggerEventArgs="show_shop">You'll collect items when you explore islands, but special items are found in the store.</answer>
+			</exchange>
+			<exchange>
+				<question>Tell me more about Poptropica, what's it all about?</question>
+				<answer triggerEvent="triggerEvent" triggerEventArgs="say_pop_is">Poptropica is about adventures, almost any kind you can think of!</answer>
+			</exchange>
+		</conversation>
+		
+		<statement id="common_room" triggerEvent="triggerEvent" triggerEventArgs="show_arcade">There's actually one just down the street.</statement>
+		<statement id="arcade_shown" link="anything_else_no_common">That's where you can chat, play games, and make friends with other players.</statement>
+		<statement id="anything_else_no_common" link="else_no_common">What else is on your mind?</statement>
+		<conversation id="else_no_common">
+			<exchange>
+				<question>Can I change my look?</question>
+				<answer link="custom_looks">Of course! Creating custom looks is half the fun, and you have lots of options.</answer>
+			</exchange>
+			<exchange>
+				<question>Where can I get items?</question>
+				<answer triggerEvent="triggerEvent" triggerEventArgs="show_shop">You'll collect items when you explore islands, but special items are found in the store.</answer>
+			</exchange>
+			<exchange>
+				<question>Tell me more about Poptropica, what's it all about?</question>
+				<answer triggerEvent="triggerEvent" triggerEventArgs="say_pop_is">Poptropica is about adventures, almost any kind you can think of!</answer>
+			</exchange>
+		</conversation>
+		
+		<statement id="shop_shown" link="anything_else_no_shop">The Store is always getting new items, and many of them are free!</statement>
+		<statement id="anything_else_no_shop" link="else_no_shop">Anything else I can help with?</statement>
+		<conversation id="else_no_shop">
+			<exchange>
+				<question>Are there other players?</question>
+				<answer link="common_room">You bet, and the best place to find them is in the Arcade.</answer>
+			</exchange>
+			<exchange>
+				<question>Can I change my look?</question>
+				<answer link="custom_looks">Of course! Creating custom looks is half the fun and you have lots of options.</answer>
+			</exchange>
+			<exchange>
+				<question>Tell me more about Poptropica, what's it all about?</question>
+				<answer triggerEvent="triggerEvent" triggerEventArgs="say_pop_is">Poptropica is about adventures, almost any kind you can think of!</answer>
+			</exchange>
+		</conversation>
+		
+	</character>
+</dialogs>

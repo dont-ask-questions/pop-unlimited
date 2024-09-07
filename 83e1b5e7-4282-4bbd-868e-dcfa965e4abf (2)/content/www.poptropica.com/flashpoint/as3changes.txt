@@ -1,0 +1,89 @@
+Changelog:
+If changes do not specify a file, they are in \game\Shell.swf
+
+[AS2 <--> AS3]
+- Profile Sync now properly converts the island player position to AS3 (com.poptropica.shells.browser.steps.BrowserStepSyncProfileFromLSO)
+- Made gameEventManager check AS2 events properly (game.managers.GameEventManager)
+- Fixed a bug where the nextScene would sometimes get stuck on a previous island and room. (com.poptropica.shells.browser.steps.BrowserStepGetFirstScene)
+- Added island item conversion from Char.sol to poptropica.sol (com.poptropica.shells.browser.steps.BrowserStepSyncProfileFromLSO)
+- Add AS2 islands to map (\game\data\scenes\map\map\maps\browser.xml)
+- Profile Sync now sets the "profileComplete" property to true if it detects non-default AS2 player data. (com.poptropica.shells.browser.steps.BrowserStepSyncProfileFromLSO)
+- gameplay.swf now goes to the new store instead of the old one. (\gameplay.swf, frame 1.DoAction)
+- Friends button hidden from both AS2 and AS3 as it is not accessible. (game.ui.hud.HudPopBrowser,game.ui.hud.Hud) (\gameplay.swf, frame 1.DoAction)
+
+- Managers now clear AS2 data for an island as well as AS3 (game.data.managers.GameEventManager)
+- Added reset AS2 function to GameEventManager in order to erase AS2 special data and avatar parts (game.managers.GameEventManager)
+- AS2 Settings button now allows resetting on Miniquest islands only (\gameplay.swf, frame 1, ResetIslandPopup)
+- AS2 Store now loads locally instead of asking list_items.php (\popups\inventory.swf, frame 2.DoAction)
+- ItemManager clears AS2 items on reset (game.managers.ItemManager)
+- Store grants most items to AS2 (game.scenes.hub.bundleShop.BundleShowcase)
+- Added AS2 island versions and created episodics for Mythology and Poptropolis Games islands (\game\data\scenes\*island1/2,mythAS2,tribal , \game\data\scenes\map\map\islands\[poptropolis/myth]Multi)
+
+- Areas where the game originally checked for common rooms have been turned off. (\gameplay.swf)
+- Text #328 has been edited to display information on offline mode rather than how to interact with other players. (\gameplay.swf)
+- Glitch where the game would want you to set the steering degrees to 112, but the game was using decimals was fixed by rounding the value (\popups\Moon\cockpitLaunch.swf)
+
+[FIXES]
+- Switched saving to offline for island completions to fix medallions (engine.ShellApi)
+- Forced game to grant items from store (game.scenes.hub.bundleShop.BundleShowcase)
+- Force saveLook to save to AS2 while not storing to server. (engine.ShellApi)
+- Start island now creates a proper Char.sol player data, and profiles are limited to 1 player. (game.scenes.start.startScreen.StartScreen)
+- The specialAbility for the 'Zombify!' card's mouth has been removed as it crashes the game. (\game\data\entity\character\parts\mouth\zombie.xml)
+- Cards now render default Y values (game.util.TextStyleData,TextUtils)
+
+[VISUAL]
+- Changed saveBtn in frame to be offscreen: translateY from -840 to 10000. (\game\assets\ui\hud\hud.swf)
+- Stop game from asking to save in Monkey Wrench (game.scenes.ftue.intro.Intro)
+- Disabled spinner wheel as it is non-functional and has no use offline anyways (\game\data\scenes\hub\town\scene.xml, \game\data\scenes\hub\town\npcs.xml, [game.scenes.hub.town.Town])
+- Forced game to switch to AS3 store in order to use poptropica.sol instead of Char.sol (game.ui.popup.IslandEndingPopup, game.scenes.hub.town.Town, game.ui.hud.HudMap, game.ui.hud.HudPopBrowser)
+- Disabled Credits and Under Construction cards (game.ui.inventory.Inventory)
+- Disabled book ads in viking island because their pages do not exist (game.scenes.viking.jungle.Jungle)
+- Loading hints are now more relevant (\game\data\ui\transitions\hints.xml)
+- Removed 'For members only!' on Timmy Failure island because you are always a member (\game\data\scenes\map\map\islands\timmy\island.xml)
+- An alternative style was added to styles.xml to override the y coordinate on card instructions for certain bonus cards (\game\style\styles.xml)
+
+[ACCURACY]
+- Removed vendingMachine from Virus Hunter island as it does not exist. (\game\assets\scenes\virusHunter\mainStreet\interactive.swf)
+- Swapped background_live and background as the common room in arab1 does not exist, this shows boards over the exit for that scene. (\game\data\scenes\arab1\bazaar\scene.xml)
+- Disabled arab2 common room as it does not exist. (\game\data\scenes\arab2\entrance\doors.xml, [game.scenes.arab1.bazaar.Bazaar])
+- Disabled arab1 common room as it does not exist. ((game.scenes.arab1.bazaar.Bazaar))
+- Map islands list has been recreated to be accurate to 2016 (\game\data\scenes\map\map\maps\browser.xml)
+
+[OTHER]
+- Disabled ads, and storeToExternal. (com.poptropica.shellSteps.BrowserStepSetPlatform)
+- Forced membership to unlock bonus quests (game.data.profile.MembershipStatus)
+- Settings logout enabled, help&support disabled, account settings disabled (game.ui.settings.SettingsPopup)
+- Bundles updated to include custom bundles (\game\data\dlc\bundles\bundles.xml)
+- New bundles created (\game\data\bundles\miniquest,popgum)
+- Cards for MiniQuests recreated for AS3 (\game\ (assets, data) \items\store\item 3244, 3081, 8109, 3100, 3223 .xml, .swf)
+- The default card background is not archived, and has been replaced with a standard background (\game\items\store\background.swf)
+- Closet switched to offline mode (game.ui.costumizer.Closet, engine.ShellApi)
+- Custom cards added for Shrink Shot and DC Diner
+- Profile 0 is now force loaded in order to bypass a crash that sometimes occurs with 2 profiles (game.scenes.start.startScreen.groups.ProfileGroup))
+- base.php now force loads the AS3 start island to stop any profile corruption that occurs when the AS2 home island is loaded.
+- Common room multiplayer support removed (game.managers.SceneManager)
+- Overrode some common room doors to go to their offline equivalents (\game\data\scenes\*\*\*\doors.xml, hub, arab3, ghd, shrink, timmy)
+- Stopped server status "chime" from printing (game.proxy.browser.DataStoreProxyPopBrowser)
+
+[REALMS]
+- Redirect saving from file to a new `landsGalaxy` field in profiled data (game.scenes.lands.shared.world.FileWorldSource/LandWorldManager)
+- Bypass login and connection restrictions (game.scenes.lands.lab1.Lab1, game.ui.hud.HudPopBrowser)
+- Add profile field for lands galaxy data (game.data.profile.ProfileData)
+- Repair local poptanium and EXP retrieval, and disable server requests (game.scenes.lands.shared.classes.LandServerGateway)
+- Permanently disabled share button as it is unavailable (game.scenes.lands.shared.popups.worldManagementPopup.ui.PrivateRealmInfoPane)
+- Fixed a crash in the monster AI (game.scenes.lands.shared.monsters.systems.MonsterWanderSystem)
+- Added local thumbnail saving (game.scenes.lands.shared.world.LandRealmData/FileWorldSource, game.scenes.lands.shared.tileLib.classes.LandEncoder)
+- Disabled the game attempting to load a crossdomain security file from AWS (game.scenes.lands.shared.LandGroup)
+- Resized VISIT button to be larger as the share button is hidden (\game\assets\scenes\lands\shared\popups\worldManagementPopup.swf)
+- Moved Realms button to the 5th slot, over the original Friends position. (game.ui.hud.HudPopBrowser,  |  \gameplay.swf, frame 1.DoAction)
+
+
+[MORE CHANGES]
+AS2 specific changes can be found in AS2changes.txt
+Changes made by an older curator can be found in oldChanges.txt
+Cards from 7000 - 7999 are reserved for flashpoint store items
+
+TODO:
+promo entry cards need to be locked or backported
+test ability cards
+

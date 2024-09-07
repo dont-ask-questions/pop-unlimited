@@ -1,0 +1,29 @@
+<chat>
+	<subject id="Greeting">
+		<msg id="1">Great day to visit the arcade!</msg>
+		<reply replyId="1">Any day in the arcade is a great day!</reply>
+	</subject>
+	<subject id="Compliment">
+		<msg id="1">I bet you're awesome at the games here!</msg>
+		<msg id="2">I was hoping I'd see you in the arcade today!</msg>
+		<msg id="3">The arcade isn't complete without you.</msg>
+		<reply replyId="1">I bet you are too!</reply>
+		<reply replyId="2">I aim to please!</reply>
+		<reply replyId="3">I hope that wasn't a “token” compliment!</reply>
+	</subject>
+	<subject id="Question">
+		<msg id="1">What's your favorite game here?</msg>
+		<msg id="2">What's your favorite thing about the arcade?</msg>
+		<msg id="3">Do you think Bucket Bot is a good dancer?</msg>
+		<msg id="4">Who left their drink on top of the token machine?</msg>
+		<reply replyId="1">I like Star Link!</reply>
+		<reply replyId="1">I like Sky Dive!</reply>
+		<reply replyId="2">Playing games!</reply>
+		<reply replyId="2">Bouncing off the balls!</reply>
+		<reply replyId="2">Flying above the fans!</reply>
+		<reply replyId="3">He's got the moves.</reply>
+		<reply replyId="3">He looks like he's malfunctioning.</reply>
+		<reply replyId="4">Wasn't me, I swear!</reply>
+		<reply replyId="4">Probably one of those Super Villains.</reply>
+	</subject>
+</chat>

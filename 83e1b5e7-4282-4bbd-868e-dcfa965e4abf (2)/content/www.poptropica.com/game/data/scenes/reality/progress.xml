@@ -1,0 +1,11 @@
+<progress>
+	<island>reality</island>
+	<events>
+		<event>started</event>
+		<event>gotItem_pen</event>
+		<event>rtv_orderedPizza</event>
+		<event>rtv_mailedApplication</event>
+		<event>rtv_wonIsland</event>
+		<event>gotItem_medal_reality</event>
+	</events>
+</progress>

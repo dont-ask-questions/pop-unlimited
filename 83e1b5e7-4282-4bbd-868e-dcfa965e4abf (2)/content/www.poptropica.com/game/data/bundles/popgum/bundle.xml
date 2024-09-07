@@ -1,0 +1,34 @@
+<bundle>
+	<id>popgum</id>
+	<name>Popgum Pack</name>
+	
+	   <cardSets>
+				 <cardSet id="shared">
+					<card>3114</card>
+					<card>3115</card>
+					<card>3118</card>
+					<card>3157</card>
+					<card>3262</card>
+                </cardSet>
+        </cardSets>
+	
+	
+	<assets>
+  		<asset id="bundleBase">
+			<assetPath>bundles/bundle_base.swf</assetPath>
+			<!-- These effect settings change the color of the background card, you get the numbers from Flash's "Adjust Color" filter -->
+			<effect>
+	    		<name>adjustColorFilter</name>
+	    		<enabled>true</enabled>
+	    		<brightness>0</brightness>
+	   			<contrast>0</contrast>
+	   			<saturation>12</saturation>
+	   			<hue>156</hue>
+    		</effect>
+	    </asset>
+	 	<asset id="bundleIcon">
+	    	<assetPath>bundles/hoa.swf</assetPath>
+	    </asset> 
+    </assets>
+    
+</bundle>

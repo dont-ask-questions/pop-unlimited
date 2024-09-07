@@ -1,0 +1,26 @@
+<npcs>
+	<npc id="owner">
+		<skin>
+			<gender>male</gender>
+			<skinColor>0xfee0d8</skinColor>
+			<hairColor>0xf5c455</hairColor>
+			<mouth>sponsorEC2</mouth>
+			<marks>arab_merchant02</marks>
+			<facial>ppirateguy1</facial>
+			<hair>mteiffel</hair>
+			<shirt>bl_cashier</shirt>
+			<pants>camopants</pants>
+			<overshirt>p_countvampire</overshirt>
+			<eyeState>squint</eyeState>
+		</skin>
+		<position>
+			<x>250</x>
+			<y>600</y>
+		</position>
+		<!-- <range>
+			<x>150</x>
+			<y>0</y>
+		</range> -->
+		<direction>right</direction>
+	</npc>
+</npcs>

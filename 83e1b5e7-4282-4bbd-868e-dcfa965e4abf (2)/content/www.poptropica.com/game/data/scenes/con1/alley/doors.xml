@@ -1,0 +1,29 @@
+<doors>
+	<door id="doorCenter">
+		<scene>game.scenes.con1.adMixed2.AdMixed2</scene>
+		<x>1850</x>
+		<y>1045</y>
+		<label>
+			<text>EXIT</text>
+			<type>exit3D</type>
+			<offset>
+				<x>0</x>
+				<y>0</y>
+			</offset>
+		</label>
+		<connectingSceneDoors>
+			<door id="exitLeft">
+				<scene>game.scenes.con1.center.Center</scene>
+				<x>4000</x>
+				<y>1900</y>
+				<direction>left</direction>
+			</door>
+			<door id="exitRight">
+				<scene>game.scenes.con1.alley.Alley</scene>
+				<x>490</x>
+				<y>1830</y>
+				<direction>right</direction>
+			</door>
+		</connectingSceneDoors>
+	</door>
+</doors>

@@ -1,0 +1,33 @@
+Old Changes
+
+These changes were done by another curator.
+
+
+Most PHP files didn't need to be programmed, but the following ones have been:
+  - /AMFPHP/*
+  - /base.php
+  - /get_inventory_menu.php
+  - /index.php
+  - /list_redeemable_items.php
+  - /time.php
+
+The following files have been intentionally excluded althought they may be requested by the curation. The absence of these files will not cause any errors to occur.
+  - /popups/travelmap.swf (used by "/scenes/islandHome/sceneHome.swf")
+  - http://flash.quantserve.com/quantv2.swf (used by "/game/Shell.swf")
+  - http://www.tania-lynne.com/clients/booksite/info.php (used by "/popups/Ghost/binderArchive.swf")
+  - Anything not located on the Poptropica website that is used by promotional island store scenes.
+
+The character creation scene has been reverted to an archive from 2014 to remove promotional material, which required adding special cases in the "/base.php" and "/flashpoint/memStatus.swf" files.
+
+The following changes have been made to the code of the "/game/Shell.swf" file:
+  - Some server requests have been disabled by removing code in the "/game/Shell.swf" file's "com.poptropica.shellSteps.browser.BrowserStepSetPlatform.build" function that set the "com.poptropica.AppConfig.storeToExternal" static variable to true (boolean). Originally, runtime errors would occur that would prevent certain actions, such as restarting islands.
+  - A bug affecting certain character animations has been fixed by replacing the "game.util.CharUtils.setAnim" static function's code to that of an updated game version's. The original code sometimes caused the game to crash when changing a character's animation, like when Athena does the "salute" animation when transforming from an old woman to a god in Mythology Island. All of the code from the updated game version can be found in this file's folder with the file name "Shell.swf".
+  - The code at the end of the "game.scenes.myth.treeBottom.TreeBottom.athenaTransform" instance function has been modified to remove usage of the "engine.components.Audio" class. The original code caused the game to crash.
+
+Big Nate Island's name in the inventory menu has been changed from "BigNate" to "Big Nate". The misspelling was used at the time of this curation, but there's evidence that the correct spelling was used up to June of 2013 at the very least.
+
+The Reality T.V. Island map file, "/game/data/scenes/map/map/islands/reality/page/island.xml", has been remade because the real file was deleted and unarchived. The remade version uses footage of the island's map page to be as faithful to the original as possible.
+
+Island map notifications for Big Nate Island, Great Pumpkin Island, Wimpy Wonderland, Red Dragon Island, Charlie and the Chocolate Factory Island, and Wimpy Boardwalk Island have been removed. They contained messages regarding membership subscriptions, which are not present in this curation.
+
+Before the "/base.php" file loads the GlobalAS3Embassy scene, it loads the "/flashpoint/memStatus.swf" file to set the current account's membership status to permanently active. Some content is unlocked by this, like the entirely of Nabooti Island.

@@ -1,0 +1,18 @@
+<dialogs>
+	<character id="player">
+		<statement id="deserved">That's what you get for voting me off.</statement>
+		<statement id="ifyouwereinthelcbonusquest">First you were in the towers and now in a cottage? I don't understand.</statement>
+	</character>
+
+	<character id="grandma">
+		<statement id="ifgrandmaisonlyone">Hey, you're that tax payer who insulted me and my husband.</statement>
+		<statement id="irememberyou">Hey, you're that tax payer who insulted us.</statement>
+		<statement id="travellers">We're travelling the world, hun.</statement>
+	</character>
+
+		<character id="grandpa">
+		<statement id="ifgrandpaisonlyone">Hey, you're that tax payer who insulted me and my wife.</statement>
+		<statement id="travellers">We're travelling the world, hun.</statement>
+	</character>
+	
+</dialogs>

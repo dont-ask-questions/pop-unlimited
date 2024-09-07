@@ -1,0 +1,14 @@
+<part>
+	<id>atlantis3_pilot</id>
+	<type>facial</type>
+	<costumizable>false</costumizable>
+	<hide>
+		<part>hair</part>
+	</hide>
+	<specialAbility id="atlantis3_facial">
+		<className>game.data.specialAbility.character.PartTimelineOpenClose</className>
+		<parameters>
+			<param id="partType">facial</param>
+		</parameters>
+	</specialAbility>
+</part>

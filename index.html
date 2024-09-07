@@ -14,24 +14,19 @@
 </div>
 
 <!-- Hidden form for returning players -->
-<div id="returning-player-form" style="display: none;">
-    <form id="loginForm">
-        <input type="text" id="username" placeholder="Username" required>
-        <input type="password" id="password" placeholder="Password" required>
-        <button type="submit">Login</button>
-    </form>
+<div id="player-selection">
+    <div id="newPlayerButton"></div> <!-- New Player SVG will load here -->
+    <div id="returningPlayerButton"></div> <!-- Returning Player SVG will load here -->
 </div>
 
 <!-- Box for new player creation (hidden at first) -->
-<div id="creation-box" style="display: none;">
-    <div id="genderSelection">
-        <h2>Are you a boy or a girl?</h2>
-        <div id="gender-bubbles">
-            <!-- SVGs will be dynamically inserted here -->
+  <div id="creation-box" style="display: none;">
+        <div id="genderSelection">
+            <h2 id="promptText"></h2> <!-- Gender prompt text (e.g., "Are you a boy or a girl?") -->
+            <div id="gender-bubbles"></div> <!-- Gender SVG bubbles will be loaded here -->
         </div>
     </div>
-</div>
 
-    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <script src="app.js"></script>
 </body>
 </html>
