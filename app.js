@@ -1,73 +1,31 @@
-// Load text from .txt file and insert it into the element with a specific font
-function loadGameText(filePath, elementId) {
-    fetch(filePath)
+function loadSVGWithText(svgFilePath, txtFilePath, svgContainerId) {
+    // Fetch the SVG content
+    fetch(svgFilePath)
         .then(response => response.text())
-        .then(textContent => {
-            const textElement = document.getElementById(elementId);
-            textElement.innerText = textContent;  // Insert the text into the specified element
-            textElement.style.fontFamily = 'PromptFont';  // Apply custom font (you'll define this in CSS)
+        .then(svgContent => {
+            // Insert the SVG content into the specified container
+            document.getElementById(svgContainerId).innerHTML = svgContent;
+
+            // Fetch the text content from the .txt file
+            fetch(txtFilePath)
+                .then(response => response.text())
+                .then(textContent => {
+                    // Select the text element inside the SVG and update its content
+                    const svgTextElement = document.querySelector(`#${svgContainerId} #buttonText`);
+                    if (svgTextElement) {
+                        svgTextElement.textContent = textContent;
+                    }
+                })
+                .catch(error => console.error('Error loading text file:', error));
         })
-        .catch(error => console.error('Error loading text:', error));
+        .catch(error => console.error('Error loading SVG file:', error));
 }
 
-// Load gender SVG bubbles dynamically
-function loadGenderBubbles() {
-    const genderBubbles = document.getElementById('gender-bubbles');
+// Call this function to load the SVG and text into the New Player button
+document.addEventListener('DOMContentLoaded', function() {
+    loadSVGWithText('/svgs/old login page stuf/shapes/310.svg', '/svgs/old login page stuf/texts/313.txt', 'newPlayerButton');
+});
 
-    // Load Boy bubble
-    fetch('.../svgs/old login page stuf/svgs put together/boy_bubble.svg')
-        .then(response => response.text())
-        .then(svgContent => {
-            const boyBubble = document.createElement('div');
-            boyBubble.innerHTML = svgContent;
-            boyBubble.id = 'boyBubble';
-            boyBubble.classList.add('gender-bubble');
-            genderBubbles.appendChild(boyBubble);
-
-            // Add click event for boy selection
-            boyBubble.addEventListener('click', function() {
-                handleGenderSelection('boy');
-            });
-        });
-
-    // Load Girl bubble
-    fetch('/static/assets/girl.svg')
-        .then(response => response.text())
-        .then(svgContent => {
-            const girlBubble = document.createElement('div');
-            girlBubble.innerHTML = svgContent;
-            girlBubble.id = 'girlBubble';
-            girlBubble.classList.add('gender-bubble');
-            genderBubbles.appendChild(girlBubble);
-
-            // Add click event for girl selection
-            girlBubble.addEventListener('click', function() {
-                handleGenderSelection('girl');
-            });
-        });
-}
-
-// Trigger gender bubble loading after the box rises
-function riseBoxAnimation() {
-    // Display the creation box
-    document.getElementById('creation-box').style.display = 'block';
-
-    // Load the gender prompt text
-    loadGameText('.../svgs/old login page stuf/texts/437.txt', 'promptText');  // Load text for "Are you a boy or a girl?"
-
-    // Load the gender SVG bubbles
-    loadGenderBubbles();
-}
-
-function handleGenderSelection(gender) {
-    console.log("Player selected gender: " + gender);
-    // Proceed to age selection after gender is chosen
-    startAgeSelection();
-}
-
-// Example function for starting age selection
-function startAgeSelection() {
-    // This would handle the transition to age selection after gender selection
-    console.log("Starting age selection...");
-}
-
+document.addEventListener('DOMContentLoaded', function() {
+    loadSVGWithText('/svgs/old login page stuf/shapes/310.svg', '/svgs/old login page stuf/texts/315.txt', 'returningPlayerButton');
+});
