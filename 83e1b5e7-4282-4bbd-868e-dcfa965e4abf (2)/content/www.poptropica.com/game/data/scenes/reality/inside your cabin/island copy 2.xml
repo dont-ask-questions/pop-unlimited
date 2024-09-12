@@ -36,6 +36,10 @@
 
 	<character id="idkwhoyourwith">
 		<statement id="ineedtotalktoyou">I need to have a word with you.</statement>
+		<statement id="secret">I've been keeping a secret from all those other people, but after seeing you in another island, I felt like I needed to share it with you. It's just us in this cabin right now anyway.</statement>
+		<statement id="lockthedoor">Just in case if some fool wants to snitch, I'm gonna have to lock the door before we start. *jumps out of his bed and pushes a chair towards the door*</statement>
+		<statement id="performance"></statement>
+
 		<statement id="thanks"></statement>
 	</character>
 

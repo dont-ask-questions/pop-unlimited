@@ -18,6 +18,7 @@
 		<statement id="gotLamp2">Not so fast. The magical lamp is mine. Show it to me!</statement>
 		<statement id="getAwayM">Don't let him get away!</statement>
 		<statement id="getAwayF">Don't let her get away!</statement>
+		<statement id="getAwayX">Don't let them get away!</statement>
 	
 		<statement id="useLamp">Well, well, well... isn't this a familiar scene.</statement>
 		<statement id="useLamp3">Ha, if I had a gold piece for every time I heard that!</statement>

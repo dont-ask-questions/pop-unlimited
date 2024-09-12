@@ -1,64 +1,35 @@
-/* /static/css/styles.css */
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.bubble {
-    width: 150px;
-    height: 150px;
-    background-color: lightblue;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    margin: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.bubble:hover {
-    background-color: deepskyblue;
-    transform: scale(1.1);
-}
-
-#initial-bubbles {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-#returning-player-form {
-    text-align: center;
-    margin-top: 50px;
-}
-
-/* Define a custom font for game prompts */
+/* Define WebLetterer BB font */
 @font-face {
-    font-family: 'WebLetterer BB';
-    src: url('.../svgs/old login page stuf/fonts/301_WebLetterer BB.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'WebLettererBB';
+    src: url('/svgs/old login page stuf/fonts/301_WebLettererBB.ttf') format('truetype'); /* Path to your TTF font */
 }
 
-/* Apply the custom font to the prompt text */
-#promptText {
-    font-family: 'WebLetterer BB', sans-serif;
-    font-size: 24px;
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
+/* Define Billy Serif font */
+@font-face {
+    font-family: 'BillySerif';
+    src: url('/svgs/old login page stuf/fonts/4_Billy Serif.ttf') format('truetype'),
+         url('/svgs/old login page stuf/fonts/4_Billy Serif.ttf') format('truetype'); /* Path to your web font files */
 }
 
+/* Apply WebLetterer BB font to text inside specific SVG elements */
+#newPlayerButton text {
+    font-family: 'WebLettererBB', sans-serif; /* Apply the custom font to text inside the SVG */
+    font-size: 20px;
+    fill: white; /* White text */
+}
+
+#returningPlayerButton text {
+    font-family: 'WebLettererBB', sans-serif; /* Apply the custom font to text inside the SVG */
+    font-size: 20px;
+    fill: white; /* White text */
+}
+
+/* Example of applying Billy Serif to other elements */
+body {
+    font-family: 'BillySerif', serif; /* Apply Billy Serif to body text */
+}
+
+/* Example of applying Billy Serif to specific class */
+.header-text {
+    font-family: 'BillySerif', serif; /* Apply Billy Serif to elements with this class */
+}

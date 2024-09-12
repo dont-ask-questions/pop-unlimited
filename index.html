@@ -1,32 +1,26 @@
-<!-- /templates/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Platform Game</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Game Intro</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the styles.css file -->
 </head>
 <body>
-    <div id="initial-bubbles">
-    <div class="bubble" id="newPlayerBubble">New Player</div>
-    <div class="bubble" id="returningPlayerBubble">Returning Player</div>
-</div>
 
-<!-- Hidden form for returning players -->
-<div id="player-selection">
-    <div id="newPlayerButton"></div> <!-- New Player SVG will load here -->
-    <div id="returningPlayerButton"></div> <!-- Returning Player SVG will load here -->
-</div>
-
-<!-- Box for new player creation (hidden at first) -->
-  <div id="creation-box" style="display: none;">
-        <div id="genderSelection">
-            <h2 id="promptText"></h2> <!-- Gender prompt text (e.g., "Are you a boy or a girl?") -->
-            <div id="gender-bubbles"></div> <!-- Gender SVG bubbles will be loaded here -->
-        </div>
+    <!-- Logo that will zoom in -->
+    <div id="logo-container">
+        <img id="game-logo" src="/svgs/old login page stuf/shapes/299.svg" alt="Game Logo"> <!-- Replace with your logo SVG --><br>
+        <img id="game-logo" src="/svgs/old login page stuf/shapes/299 copy.svg" alt="Game Logo">
     </div>
 
+    <!-- New Player and Returning Player buttons that will zoom in after the logo -->
+    <div id="player-selection">
+        <div id="newPlayerButton"></div> <!-- New Player SVG will load here -->
+        <div id="returningPlayerButton"></div> <!-- Returning Player SVG will load here -->
+    </div>
+
+    <!-- JavaScript to control animations -->
     <script src="app.js"></script>
 </body>
 </html>

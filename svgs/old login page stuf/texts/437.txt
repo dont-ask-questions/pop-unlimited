@@ -1,11 +1,13 @@
 are you a
 --- RECORDSEPARATOR ---
-boy 
+boy, 
 --- RECORDSEPARATOR ---
-or a
+a
 --- RECORDSEPARATOR ---
  
 --- RECORDSEPARATOR ---
-girl
+girl, or 
+--- RECORDSEPARATOR ---
+gender neutral?
 --- RECORDSEPARATOR ---
 ?
