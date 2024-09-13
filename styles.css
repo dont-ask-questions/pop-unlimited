@@ -1,3 +1,16 @@
+/* Basic reset for body */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
 /* Define WebLetterer BB font */
 @font-face {
     font-family: 'WebLettererBB';
@@ -7,29 +20,51 @@
 /* Define Billy Serif font */
 @font-face {
     font-family: 'BillySerif';
-    src: url('/svgs/old login page stuf/fonts/4_Billy Serif.ttf') format('truetype'),
-         url('/svgs/old login page stuf/fonts/4_Billy Serif.ttf') format('truetype'); /* Path to your web font files */
+    src: url('/svgs/old login page stuf/fonts/4_Billy Serif.ttf') format('truetype');
 }
 
 /* Apply WebLetterer BB font to text inside specific SVG elements */
-#newPlayerButton text {
+#newPlayerButton text, #returningPlayerButton text {
     font-family: 'WebLettererBB', sans-serif; /* Apply the custom font to text inside the SVG */
     font-size: 20px;
     fill: white; /* White text */
 }
 
-#returningPlayerButton text {
-    font-family: 'WebLettererBB', sans-serif; /* Apply the custom font to text inside the SVG */
-    font-size: 20px;
-    fill: white; /* White text */
+/* Center both logo images vertically in relation to each other */
+#logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center logos horizontally */
+    margin-bottom: 50px;
 }
 
-/* Example of applying Billy Serif to other elements */
-body {
-    font-family: 'BillySerif', serif; /* Apply Billy Serif to body text */
+/* First logo */
+#game-logo, #game-logo2 {
+    width: 500px; /* Set width for both logos */
+    transform: scale(0); /* Start invisible (scaled to 0) */
+    animation: logoZoomIn 1.5s forwards ease-in-out; /* Zoom-in animation */
 }
 
-/* Example of applying Billy Serif to specific class */
-.header-text {
-    font-family: 'BillySerif', serif; /* Apply Billy Serif to elements with this class */
+/* Keyframe for the zoom-in animation */
+@keyframes logoZoomIn {
+    0% {
+        transform: scale(0); /* Start small */
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1); /* End at normal size */
+        opacity: 1;
+    }
+}
+
+/* Container for player selection (New Player and Returning Player buttons) */
+#player-selection {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    opacity: 1; /* Ensure opacity is 1 */
+}
+/* SVG buttons for New Player and Returning Player */
+#newPlayerButton, #returningPlayerButton {
+    width:500px;
 }
