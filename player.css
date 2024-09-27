@@ -1,0 +1,35 @@
+.character {
+    position: relative;
+    width: 200px; /* Adjust the size as needed */
+    height: 400px; /* Adjust the size as needed */
+}
+
+.part {
+    position: absolute;
+}
+
+.head {
+    animation: float 2s ease-in-out infinite;
+    position: relative;
+}
+.headcolor {
+   z-index: 1;
+   margin-top: -500px;
+   position: relative; 
+}
+
+.headoutline {
+   z-index: 2;
+   position: relative; margin
+  width: 100%; 
+  height: 100%; 
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* Starting position */
+    }
+    50% {
+        transform: translateY(-5px); /* Float up by 10 pixels */
+    }
+}
