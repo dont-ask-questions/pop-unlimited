@@ -25,6 +25,7 @@
 
 
 .whole_head {
+  position: absolute;
   /*animation: float 2s ease-in-out infinite;*/
 }
 .head {
@@ -42,7 +43,7 @@
 
 .headoutline {
    z-index: 2;
-   position: relative; margin
+   position: relative;
   width: 100%; 
   height: 100%; 
 }
@@ -55,3 +56,5 @@
         transform: translateY(-5px); 
     }
 }*/
+
+
