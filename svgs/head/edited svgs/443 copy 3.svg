@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ffdec="https://www.free-decompiler.com/flash" ffdec:objectType="shape" xml:space="preserve" viewBox="0 0 114.55 53.2">
+  <defs>
+    <clipPath id="a" clipPathUnits="userSpaceOnUse">
+      <path fill="none" fill-rule="evenodd" d="M-62.3-31.6H62.25v63.2H-62.3Zm.878 24.925v42.254H63.279V-6.675Z" class="powerclip"/>
+    </clipPath>
+  </defs>
+  <path fill="#fc6" fill-rule="evenodd" d="M26.55-26.6q12.7 0 21.7 7.8t9 18.8q0 11-9 18.8-9 7.8-21.7 7.8t-21.7-7.8q-9-7.8-9-18.8t9-18.8q9-7.8 21.7-7.8M-24.7-12.75q5.6 6.4 5.6 15.45 0 9.05-5.6 15.45-5.6 6.4-13.5 6.4t-13.5-6.4q-5.6-6.4-5.6-15.45 0-9.05 5.6-15.45 5.6-6.4 13.5-6.4t13.5 6.4" clip-path="url(#a)" transform="translate(57.3 26.6)"/>
+</svg>

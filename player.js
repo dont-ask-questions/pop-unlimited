@@ -11,6 +11,10 @@ document.addEventListener('keydown', (event) => {
     if (event.key === 's' || event.key === 'S') {
         const headColor = document.getElementById('head_color');
         headColor.setAttribute('fill', getRandomColor());
+
+        // Optional: If eyelids need to match the head color, add this:
+        const eyelids = document.getElementById('eyelids_color');
+        eyelids.setAttribute('fill', headColor.getAttribute('fill'));
     }
 });
 document.addEventListener('DOMContentLoaded', function() {
@@ -39,6 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const pupilY = Math.sin(angle) * distance;
 
         // Apply the transformation to the pupils group (move it down based on calculated values)
-        pupils.setAttribute('transform', `translate(${46.5 + pupilX}, ${29.0 + pupilY})`);
+        pupils.setAttribute('transform', `translate(${48.5 + pupilX}, ${29.0 + pupilY})`);
     });
 });

@@ -1,60 +1,89 @@
 .character {
-   position: relative;
-
+  position: relative;
 }
 
 .guide {
   position: absolute;
 }
+
 .part {
-    position: absolute;
+  position: absolute;
 }
 
 .eyes {
-    position: absolute;
-    z-index: 3;
-    left: 19px;
+  position: absolute;
+  z-index: 3;
+  left: 19px;
 }
 
 .eyesoutline {
-  position:absolute;
+  position: absolute;
   z-index: 2;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
-
 
 .whole_head {
   position: absolute;
-  /*animation: float 2s ease-in-out infinite;*/
+  animation: float 2s ease-in-out infinite;
 }
+
 .head {
-    
-    position: absolute;
-    margin-top:19px;
-    z-index: 2;
+  position: absolute;
+  margin-top: 19px;
+  z-index: 2;
 }
+
 .headcolor {
-   z-index: 1;
-   margin-top: -500px;
-   position: relative; 
+  z-index: 1;
+  margin-top: -500px;
+  position: relative;
 }
-/*soon, i will have to temporarily disable the floating animation to position the eyes, mouth, and whatever*/
 
 .headoutline {
-   z-index: 2;
-   position: relative;
-  width: 100%; 
-  height: 100%; 
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
-/*
+
 @keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-5px); 
-    }
-}*/
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
 
 
+/* Wipe-in and wipe-out animation for the eyelid (VERTICAL wipe) */
+
+@keyframes wipe-in-out-eyelid {
+  0% {
+    clip-path: inset(0 0 100% 0);
+    /* Fully hidden from the bottom */
+  }
+  5% {
+    clip-path: inset(0 0 0 0);
+    /* Fully visible (wipe-in complete) */
+  }
+  10% {
+    clip-path: inset(0 0 100% 0);
+    /* Fully hidden again (wipe-out complete) */
+  }
+  100% {
+    clip-path: inset(0 0 100% 0);
+    /* Stay hidden for the rest of the duration */
+  }
+}
+
+
+.eyelid {
+  fill: #ffcc66;
+  /* Eyelid color */
+  animation: wipe-in-out-eyelid 5s ease-out infinite;
+  /* 10-second cycle for wipe-in and wipe-out */
+  transform-origin: center;
+}
