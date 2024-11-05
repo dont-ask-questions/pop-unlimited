@@ -62,37 +62,7 @@
 
 
 
-@keyframes wipe-in-out-eyelid {
-  0% {
-    clip-path: inset(0 0 100% 0); /* Fully hidden from the bottom */
-  }
-  5% {
-    clip-path: inset(0 0 0 0); /* Fully visible (wipe-in complete) */
-  }
-  10% {
-    clip-path: inset(0 0 100% 0); /* Fully hidden again (wipe-out complete) */
-  }
-  100% {
-    clip-path: inset(0 0 100% 0); /* Stay hidden for the rest of the duration */
- }
-}
 
-
-
-@keyframes eyelids-outlines {
-    0% {
-        transform: translateY(5px);
-  }
-  5% {
-    transform: translateY(50px); /*full length of the eye.*/
-  }
-  10% {
-    transform: translateY(5px);
-  }
-  100% {
-    transform: translateY(5px);
-  }
-}
 
 .eyelid {
   fill: #ffcc66; /* Eyelid color */
@@ -107,4 +77,20 @@
   transform-origin: center;
   position: absolute;
   top:8px;
+}
+
+
+@keyframes eyelids-outlines {
+    0% {
+        transform: scaleY(0.885);
+  }
+  5% {
+    transform: scaleY(0.35); /*full length of the eye.*/
+  }
+  10% {
+    transform: scaleY(0.885);
+  }
+  100% {
+            transform: scaleY(0.885);
+  }
 }
