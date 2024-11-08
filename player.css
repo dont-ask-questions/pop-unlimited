@@ -103,8 +103,20 @@
 }
 /* Animation for the line growing down, shrinking, and moving back up */
 .eyelid_outline {
-  animation: eyelids-outlines 5s ease-out infinite;
+   animation: eyelids-outlines 5s ease-out infinite;
   transform-origin: center;
-  position: absolute;
-  top:8px;
+  position: relative;
 }
+
+.eyelidlines {
+  position:absolute;
+  z-index:4;
+}
+
+.eyelidlines2 {
+  position:absolute;
+  z-index:4;
+  left:55px;
+}
+
+/*all we need to do for the eyelids are to replace the clip path with .eyelidlines2 with another shape (the right eye)*/
