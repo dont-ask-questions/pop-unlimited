@@ -81,16 +81,16 @@
 
 @keyframes eyelids-outlines {
     0% {
-        transform: translateY(5px);
+        transform: translateY(0px);
   }
   5% {
     transform: translateY(50px); /*full length of the eye.*/
   }
   10% {
-    transform: translateY(5px);
+    transform: translateY(0px);
   }
   100% {
-    transform: translateY(5px);
+    transform: translateY(0px);
   }
 }
 
@@ -108,15 +108,36 @@
   position: relative;
 }
 
+@keyframes eyelids-outlines2 {
+    0% {
+        transform: translateY(0px);
+  }
+  5% {
+    transform: translateY(60px); /*full length of the eye.*/
+  }
+  10% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .eyelidlines {
   position:absolute;
   z-index:4;
 }
 
 .eyelidlines2 {
+  
   position:absolute;
   z-index:4;
   left:55px;
+  top:-4px;
+}
+
+.right_eyelid_outline {
+  animation: eyelids-outlines2 5s ease-out infinite;
 }
 
 /*all we need to do for the eyelids are to replace the clip path with .eyelidlines2 with another shape (the right eye)*/
