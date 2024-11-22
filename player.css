@@ -1,9 +1,11 @@
 .character {
-  position: relative;
+  position: absolute;
 }
 
 .guide {
   position: absolute;
+  top:-41px;
+  left:-40px;
 }
 
 .part {
@@ -25,7 +27,8 @@
 
 .whole_head {
   position: absolute;
-  animation: float 2s ease-in-out infinite;
+  /*opacity:0.6;/*temporary*/
+  animation: float 2s ease-in-out infinite;/*temporarily disabled*/
 }
 
 .head {
@@ -113,7 +116,7 @@
         transform: translateY(0px);
   }
   5% {
-    transform: translateY(60px); /*full length of the eye.*/
+    transform: translateY(58px); /*full length of the eye.*/
   }
   10% {
     transform: translateY(0px);
@@ -140,4 +143,48 @@
   animation: eyelids-outlines2 5s ease-out infinite;
 }
 
+
+.whole_body {
+  position:absolute;
+  top:110px;
+  left:68px;
+}
+
+.arm {
+  position:absolute;
+  top:-86px;
+  left:-148px;
+  rotate:90deg;
+  
+}
+
+@keyframes arms {
+  0%,
+  100% {
+    transform: rotate(3deg);;
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+
+.whole_arm {
+  position:absolute;
+  top:0.1px;
+  left:0.5px;
+  animation:arms 2s ease-in-out infinite;/*temporarily disabled*/
+}
+
+.hand {
+  position:absolute;
+  top:63px;
+  left:44px;
+}
+
+.whole_arm_left {
+  position:absolute;
+  top:113px;
+  left:25px;
+  animation:arms 2s ease-in-out infinite;
+}
 /*all we need to do for the eyelids are to replace the clip path with .eyelidlines2 with another shape (the right eye)*/
