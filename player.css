@@ -107,8 +107,6 @@
 /* Animation for the line growing down, shrinking, and moving back up */
 .eyelid_outline {
    animation: eyelids-outlines 5s ease-out infinite;
-  transform-origin: center;
-  position: relative;
 }
 
 @keyframes eyelids-outlines2 {

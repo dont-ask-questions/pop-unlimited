@@ -91,3 +91,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+
+//i am gonna add a few animation functions and then run them. first we have walking...
+
+

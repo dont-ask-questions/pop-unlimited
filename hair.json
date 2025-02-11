@@ -1,0 +1,157 @@
+"signup": [
+  //proposal: the game picks randomly from the hair attribute in defaultAttributes. If they pick a hair with multiple svgs (e.g. the baseball cap hair, 7), then they will run a div function which pieces together the svg pieces inside the HTML.
+  //the game is supposed to enter here for the url if they pick a number. the svgs inside here will be put into the html file.
+  //but first, how are we gonna have HTML go inside json and pick an svg?
+      1{
+        "url":"../svgs/other characters/default/hair/hair 1/shapes/1.svg",//male hair
+        }
+      2{
+        "hair":"../svgs/other characters/default/hair/hair 2/shapes/1.svg",//yeah ykw imma start naming the special ones' attributes
+        "outline":"../svgs/other characters/default/hair/hair 2/shapes/3.svg"//male or female
+      }
+      3{
+        "url":"../svgs/other characters/default/hair/hair 3/shapes/1.svg",//male hair
+      }
+      4{
+        "hair":"../svgs/other characters/default/hair/hair 4/shapes/1.svg",//male hair
+        "hat":"../svgs/other characters/default/hair/hair 4/shapes/3.svg"
+      }
+      5{
+        "url":"../svgs/other characters/default/hair/hair 5/shapes/2.svg"//why is there a second svg which is blank? also male
+      }
+      6{
+        "url":"../svgs/other characters/default/hair/hair 6/shapes/1.svg"//can be male or female
+      }
+      7{//the most infamous one, because its the first one i noticed that has multiple svg files
+        "cap":"../svgs/other characters/default/hair/hair 7/shapes/1.svg",//male
+        "capOutline":"../svgs/other characters/default/hair/hair 7/shapes/2.svg",
+        "hair":"../svgs/other characters/default/hair/hair 7/shapes/3.svg"
+      }
+      8{
+        "url":"../svgs/other characters/default/hair/hair 8/shapes/1.svg"//male
+      }
+      9{
+        "url":"../svgs/other characters/default/hair/hair 9/shapes/1.svg"//male
+      }
+      10{
+        "url":"../svgs/other characters/default/hair/hair 10/shapes/1.svg"//male
+      }
+      11{
+        "url":"../svgs/other characters/default/hair/hair 11/shapes/1.svg"//male
+      }
+      12{
+        "url":"../svgs/other characters/default/hair/hair 12/shapes/1.svg"//male
+      }
+      13{
+        "hat":"../svgs/other characters/default/hair/hair 13/shapes/1.svg",//male
+        "hatOutline":"../svgs/other characters/default/hair/hair 13/shapes/3.svg"
+      }
+      14{
+        "url":"../svgs/other characters/default/hair/hair 14/shapes/1.svg"//male
+      }
+      15{
+        "hair":"../svgs/other characters/default/hair/hair 15/shapes/2.svg",//female
+        "bows":"../svgs/other characters/default/hair/hair 15/shapes/1.svg"
+      }
+      16{
+        "beads":"../svgs/other characters/default/hair/hair 16/shapes/1.svg",
+        "hair":"../svgs/other characters/default/hair/hair 16/shapes/2.svg"//female
+      }
+      17{
+        "beads":"../svgs/other characters/default/hair/hair 17/shapes/1.svg",//female
+        "hair":"../svgs/other characters/default/hair/hair 17/shapes/2.svg"
+      }
+      18{
+        "hair":"../svgs/other characters/default/hair/hair 18/shapes/1.svg",
+        "bead":"../svgs/other characters/default/hair/hair 18/shapes/3.svg"
+      }
+      19{
+        "url":"../svgs/other characters/default/hair/hair 19/shapes/1.svg"//female
+      }
+      20{
+        "url":"../svgs/other characters/default/hair/hair 20/shapes/1.svg"//female
+      }
+      21{
+        "url":"../svgs/other characters/default/hair/hair 21/shapes/1.svg"//female
+      }
+      22{
+        "hair":"../svgs/other characters/default/hair/hair 22/shapes/1.svg",
+        "band":"../svgs/other characters/default/hair/hair 22/shapes/3.svg"//male
+      }
+      23{
+        "url":"../svgs/other characters/default/hair/hair 23/shapes/1.svg"//female
+      }
+      24{
+        "url":"../svgs/other characters/default/hair/hair 24/shapes/1.svg"//male
+      }
+      25{
+        "hatFront":"../svgs/other characters/default/hair/hair 25/shapes/1.svg",
+        "hatOutline":"../svgs/other characters/default/hair/hair 25/shapes/3.svg"//can be male or female
+      }
+      26{
+        "hat":"../svgs/other characters/default/hair/hair 26/shapes/1.svg",
+        "hair":"../svgs/other characters/default/hair/hair 26/shapes/2.svg"//male
+      }
+      27{
+        "url":"../svgs/other characters/default/hair/hair 27/shapes/1.svg"//female
+      }
+      28{
+        "url":"../svgs/other characters/default/hair/hair 28/shapes/1.svg"//male
+      }
+      29{
+        "bands":"../svgs/other characters/default/hair/hair 29/shapes/1.svg",
+        "hair":"../svgs/other characters/default/hair/hair 29/shapes/2.svg"//female
+      }
+      30{
+        "hair":"../svgs/other characters/default/hair/hair 30/shapes/1.svg",
+        "band":"../svgs/other characters/default/hair/hair 30/shapes/2.svg"//female
+      }
+      31{
+        "hair":"../svgs/other characters/default/hair/hair 31/shapes/1.svg",
+        "band":"../svgs/other characters/default/hair/hair 31/shapes/3.svg"//female. also, i couldn't find 31?
+      }
+      32{
+        "hat":"../svgs/other characters/default/hair/hair 32/shapes/1.svg",
+        "hair":"../svgs/other characters/default/hair/hair 32/shapes/2.svg"//female
+      }
+      33{
+        "url":"../svgs/other characters/default/hair/hair 33/shapes/1.svg"//male
+      }
+      34{
+        "url":"../svgs/other characters/default/hair/hair 34/shapes/1.svg"//male
+      }
+      35{
+        "url":"../svgs/other characters/default/hair/hair 35/shapes/1.svg"//male
+      }
+      36{
+        "hat":"../svgs/other characters/default/hair/hair 36/shapes/1.svg",
+        "hair":"../svgs/other characters/default/hair/hair 36/shapes/2.svg"//male
+      }
+      37{
+        "url":"../svgs/other characters/default/hair/hair 37/shapes/1.svg"//female
+      }
+      38{
+        "hair":"../svgs/other characters/default/hair/hair 38/shapes/1.svg",
+        "headband":"../svgs/other characters/default/hair/hair 38/shapes/3.svg"//female
+      }
+      39{
+        "url":"../svgs/other characters/default/hair/hair 38/shapes/1.svg"//female?
+      }
+      40{
+        "url":"../svgs/other characters/default/hair/hair 40/shapes/1.svg"//male
+      }
+      41{
+        "url":"../svgs/other characters/default/hair/hair 41/shapes/1.svg"//female
+      }
+      42{
+        "url":"../svgs/other characters/default/hair/hair 42/shapes/1.svg"//female
+      }
+      43{
+        "url":"../svgs/other characters/default/hair/hair 43/shapes/1.svg"//male
+      }
+
+    
+      ]
+"other_npcs": [
+
+]

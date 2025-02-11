@@ -1,0 +1,81 @@
+"signup" : [
+	1 {
+		"url":"../svgs/other characters/default/shirts/shirt 1/shapes/1.svg"
+	} //male or female
+	2 {
+		"url":"../svgs/other characters/default/shirts/shirt 2/shapes/1.svg" //looks like a crop top?
+	}
+	3 { 
+		"url":"../svgs/other characters/default/shirts/shirt 3/shapes/1.svg"//can be male or female
+	}
+	4 {
+		"url":"../svgs/other characters/default/shirts/shirt 4/shapes/1.svg"//can be male or female
+	}
+	5 {
+		"url":"../svgs/other characters/default/shirts/shirt 5/shapes/1.svg"//can be male or female
+	}
+	6 {
+		"url":"../svgs/other characters/default/shirts/shirt 6/shapes/1.svg" //can be male or female
+	}
+	7 {
+		"url":"../svgs/other characters/default/shirts/shirt 7/shapes/1.svg" //a pink tank top, so this is female
+	}
+	8 {
+		"url":"../svgs/other characters/default/shirts/shirt 8/shapes/1.svg"
+	}//there was no 8th shirt in the swf lol. this is female
+	9 {
+		"url":"../svgs/other characters/default/shirts/shirt 9/shapes/1.svg"//female
+	}
+	10 {
+		"url":"../svgs/other characters/default/shirts/shirt 10/shapes/1.svg"//male or female
+	}
+	11 {
+		"url":"../svgs/other characters/default/shirts/shirt 11/shapes/1.svg"//male or female
+	}
+	12 {
+		"url":"../svgs/other characters/default/shirts/shirt 12/shapes/1.svg"//male or female
+	}
+	13 {
+		"url":"../svgs/other characters/default/shirts/shirt 13/shapes/1.svg"
+	//male coded?
+	}
+	14 {
+		"url":"../svgs/other characters/default/shirts/shirt 14/shapes/1.svg"//this is male coded because it has a tie.
+	}
+	15 {
+		"url":"../svgs/other characters/default/shirts/shirt 15/shapes/1.svg"//male coded
+	}
+	16 {
+		"url":"../svgs/other characters/default/shirts/shirt 16/shapes/1.svg"//male coded
+	}
+	17 {
+		"url":"../svgs/other characters/default/shirts/shirt 17/shapes/1.svg"//female coded
+	}//there was no 18th shirt swf
+	18 {
+		"url":"../svgs/other characters/default/shirts/shirt 18/shapes/1.svg"//there wasn't any 20th shirt swf either. and this is male
+	}
+	19 {
+		"url":"../svgs/other characters/default/shirts/shirt 19/shapes/1.svg"
+	//male and female characters each had their own jerseys a different color, this one's the male one. it's blue. 
+	//gender neutral characters can wear either color jersey.
+	}
+	20 {
+		"url":"../svgs/other characters/default/shirts/shirt 20/shapes/1.svg"//female
+	}
+	21 {
+		"url":"../svgs/other characters/default/shirts/shirt 21/shapes/1.svg"
+		//female jersey, it's pink.
+	}//there wasn't a 24th swf...
+	22 {
+		"url":"../svgs/other characters/default/shirts/shirt 22/shapes/1.svg"//male or female
+	}
+	23 {
+		"url":"../svgs/other characters/default/shirts/shirt 23/shapes/1.svg"//male or female
+	}
+
+
+
+]
+"npcs" : [
+	
+]

@@ -1,0 +1,42 @@
+{
+    "items": [
+        1 {
+            "name": "Water Bucket",
+            "card": "../svgs/items/water bucket/shapes/1.svg",
+            "item":"../svgs/items/water bucket/shapes/6.svg"//hey, they had separate svgs in the swfs so why not get js to put em together?
+        },//okay, so i have to look into the item list again to see what number it really is, since i wanna let people login with their childhood accounts.
+        2 {
+            "name": "Golden Egg",
+            "card": "../svgs/items/golden egg/shapes/1.svg",
+            "item":"../svgs/items/golden egg/shapes/6.svg"
+        },
+        3 {
+            "name": "Signal Flag",
+            "card": "../svgs/items/signal flag/shapes/1.svg",
+            "item":"../svgs/items/signal flag/shapes/6.svg"
+        }
+        4{
+            "name": "Glow Stick",
+            "card": "../svgs/items/glowstick/shapes/1.svg",
+            "interior":"../svgs/items/glowstick/shapes/6.svg",
+            "light":"../svgs/items/glowstick/shapes/7.svg",
+            "stick":"../svgs/items/glowstick/shapes/9.svg"
+        }
+        //for these items who have buttons, they'd be part of a list.
+        5 {
+            "name": "Jetpack",
+            "card": "../svgs/items/jetpack/shapes/1.svg",
+            "silhoutte":"../svgs/items/jetpack/shapes/3.svg",
+            "item":"../svgs/items/jetpack/shapes/4.svg",
+            /*
+            "button":"../svgs/items/jetpack/shapes/12.svg",
+            "buttonOutline":"../svgs/items/jetpack/shapes/14.svg",
+            "buttonClicked":"../svgs/items/jetpack/shapes/16.svg"*/ //do i need these here?
+        }
+        6{
+            "name": "Prized Porker",
+            "card": "../svgs/items/pig/shapes/1.svg",
+            "item": "../svgs/items/pig/shapes/6.svg"
+        }//somehow they didn't have 7, 8, or 9 swfs.
+    ]
+}
