@@ -21,7 +21,10 @@ function darkenColor(color) {
 }
 
 
+//This spot is for generating the eyes.
 
+
+//Randomizing a color
 function getRandomColor() {
     const letters = '0123456789ABCDEF';
     let color = '#';
@@ -30,7 +33,7 @@ function getRandomColor() {
     }
     return color;
 }
-
+//Should be changing the color with ctrl+S...
 document.addEventListener('keydown', (event) => {
     if (event.key === 's' || event.key === 'S') {
         const headColor = document.getElementById('head_color');
@@ -61,6 +64,8 @@ document.addEventListener('keydown', (event) => {
         /*these are just gonna be line svgs for now, i cannot find them*/
     }
 });
+
+//pupils following the mouse.
 document.addEventListener('DOMContentLoaded', function() {
     const pupils = document.getElementById('pupils'); // Group containing both pupils
 
@@ -88,11 +93,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Apply the transformation to the pupils group (move it down based on calculated values)
         pupils.setAttribute('transform', `translate(${48.5 + pupilX}, ${29.0 + pupilY})`);
+
+        //And if the pupils are half closed, eyelids would go up with the pupils (0%, 50%, and 100% transforming would change on these lol)
+        //const leftEyelidSvg = document.getElemendByClassName('eyelidlines');
+        //const rightEyelidSvg = document.getElemendByClassName('eyelidlines2');
     });
 });
 
 
 
 //i am gonna add a few animation functions and then run them. first we have walking...
+/*function walking {
+
+}*/
+/*function running {
+
+}*/
+/*function jumping {
+
+}*/
+/*function crouching {
+
+}*/
+/*function rolling {
+
+}*/
+/*function talking {
+
+}*/
 
 

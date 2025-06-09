@@ -34,9 +34,70 @@
             "buttonClicked":"../svgs/items/jetpack/shapes/16.svg"*/ //do i need these here?
         }
         6{
-            "name": "Prized Porker",
+            "name": "Pig",
             "card": "../svgs/items/pig/shapes/1.svg",
             "item": "../svgs/items/pig/shapes/6.svg"
         }//somehow they didn't have 7, 8, or 9 swfs.
+        7 {
+            "name":"Sudoku"
+        }
+        8 {
+            "name":"Switch"
+        }
+        9 {
+            "name":"Hoops"
+        }//ohh that's why. i couldn't find them in the items folder
+        10 {
+            "name":"Coconut Milk",
+            "card":"../svgs/items/coconut milk/shapes/1.svg",
+            "shadow":"../svgs/items/coconut milk/shapes/6.svg",
+            "item":"../svgs/items/coconut milk/shapes/7.svg",
+            "line":"../svgs/items/coconut milk/shapes/8.svg",
+            "shading":"../svgs/items/coconut milk/shapes/10.svg"
+        }
+        11 {
+            "name":"Grass Skirt",
+            "card":"../svgs/items/grass skirt/shapes/1.svg",
+            "item":"../svgs/items/grass skirt/shapes/3.svg",//this should be rotated
+
+        }
+        12 {
+            "name":"Old Bone",
+            "card":"../svgs/items/old bone/shapes/1.svg",
+            "shadow":"../svgs/items/old bone/shapes/3.svg",
+            "item":"../svgs/items/old bone/shapes/7.svg",
+            "shading":"../svgs/items/old bone/shapes/8.svg"
+        }
+        13 {
+            "name":"Shark Fin",
+            "card":"../svgs/items/shark fin/shapes/1.svg",
+            "item":"../svgs/items/shark fin/shapes/6.svg"
+        }
+        14 {
+            "name":"Calming Potion",
+            "card":"../svgs/items/calming potion/shapes/1.svg",
+            "pattern":"../svgs/items/calming potion/shapes/3.svg",
+            "shadow":"../svgs/items/calming potion/shapes/8.svg",
+            "item":"../svgs/items/calming potion/shapes/9.svg"
+        }
+        15 {
+            "name":"Key Ingredient",//this has A LOT OF PARTS...
+            "card":"../svgs/items/key ingredient/shapes/1.svg",
+            "shadow":"../svgs/items/calming potion/shapes/6.svg",
+            "ingredient":"../svgs/items/calming potion/shapes/7.svg",
+            "ingredientShading":"../svgs/items/calming potion/shapes/8.svg",
+            "potOutline":"../svgs/items/calming potion/shapes/10.svg",
+            "potSideShading":"../svgs/items/calming potion/shapes/11.svg",
+            "potSurface":"../svgs/items/calming potion/shapes/13.svg",
+            "bottomOutline":"../svgs/items/calming potion/shapes/14.svg",
+            "potPattern":"../svgs/items/calming potion/shapes/16.svg",
+            "sideOutline?":"../svgs/items/calming potion/shapes/18.svg",
+            "potShading":"../svgs/items/calming potion/shapes/29.svg",
+            "topOfPot":"../svgs/items/calming potion/shapes/31.svg",
+            "topShading":"../svgs/items/calming potion/shapes/32.svg",//they just had to make this one complex ;-;
+            "outlinesForTops?":"../svgs/items/calming potion/shapes/34.svg",
+            "outline":"../svgs/items/calming potion/shapes/35.svg"
+        }
+
     ]
 }

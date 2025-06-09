@@ -1,4 +1,6 @@
-//for the pieces with multiple parts, we will tell js, "for this number or whatever, i would like you to put these svgs in this certain arrangement" and then have it print a div with the arrangement in our html code. it has to go inside our defaultAppearances.json file then our hair.json file.
+//for the pieces with multiple parts, we will tell js, "for this number or whatever, i would like you to put these svgs in this certain arrangement" and then have it print a div with the arrangement in our html code. it has to go inside our defaultAppearances.json file then our hair.json file to check which number we've got.
+
+//okay, do we REALLY need those python files??
 import json
 
 fetch('defaultAppearances.json')

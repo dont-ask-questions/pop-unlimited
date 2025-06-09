@@ -1,0 +1,190 @@
+.character {
+  position: absolute;
+}
+
+.guide {
+  position: absolute;
+  top:-41px;
+  left:-40px;
+}
+
+.part {
+  position: absolute;
+}
+
+.eyes {
+  position: absolute;
+  z-index: 3;
+  left: 19px;
+}
+
+.eyesoutline {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.whole_head {
+  position: absolute;
+  /*opacity:0.6;/*temporary*/
+  animation: float 2s ease-in-out infinite;/*temporarily disabled*/
+}
+
+.head {
+  position: absolute;
+  margin-top: 19px;
+  z-index: 2;
+}
+
+.headcolor {
+  z-index: 1;
+  margin-top: -500px;
+  position: relative;
+}
+
+.headoutline {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+
+/* Wipe-in and wipe-out animation for the eyelid (VERTICAL wipe) */
+
+.eyelid {
+
+}
+
+@keyframes wipe-in-out-eyelid {
+  0% {
+    clip-path: inset(0 0 100% 0); /* Fully hidden from the bottom */
+  }
+  5% {
+    clip-path: inset(0 0 0 0); /* Fully visible (wipe-in complete) */
+  }
+  10% {
+    clip-path: inset(0 0 100% 0); /* Fully hidden again (wipe-out complete) */
+  }
+  100% {
+    clip-path: inset(0 0 100% 0); /* Stay hidden for the rest of the duration */
+ }
+}
+
+
+
+@keyframes eyelids-outlines {
+    0% {
+        transform: translateY(0px);
+  }
+  5% {
+    transform: translateY(50px); /*full length of the eye.*/
+  }
+  10% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.eyelid {
+  fill: #ffcc66; /* Eyelid color */
+  animation: wipe-in-out-eyelid 5s ease-out infinite; /* Wipe animation */
+  transform-origin: center;
+  position: relative;
+  bottom: 0;
+}
+/* Animation for the line growing down, shrinking, and moving back up */
+.eyelid_outline {
+   animation: eyelids-outlines 5s ease-out infinite;
+}
+
+@keyframes eyelids-outlines2 {
+    0% {
+        transform: translateY(0px);
+  }
+  5% {
+    transform: translateY(58px); /*full length of the eye.*/
+  }
+  10% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.eyelidlines {
+  position:absolute;
+  z-index:4;
+}
+
+.eyelidlines2 {
+  
+  position:absolute;
+  z-index:4;
+  left:55px;
+  top:-4px;
+}
+
+.right_eyelid_outline {
+  animation: eyelids-outlines2 5s ease-out infinite;
+}
+
+
+.whole_body {
+  position:absolute;
+  top:110px;
+  left:68px;
+}
+
+.arm {
+  position:absolute;
+  top:-86px;
+  left:-148px;
+  rotate:90deg;
+  
+}
+
+@keyframes arms {
+  0%,
+  100% {
+    transform: rotate(3deg);;
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+
+.whole_arm {
+  position:absolute;
+  top:0.1px;
+  left:0.5px;
+  animation:arms 2s ease-in-out infinite;/*temporarily disabled*/
+}
+
+.hand {
+  position:absolute;
+  top:63px;
+  left:44px;
+}
+
+.whole_arm_left {
+  position:absolute;
+  top:113px;
+  left:25px;
+  animation:arms 2s ease-in-out infinite;
+}
+/*all we need to do for the eyelids are to replace the clip path with .eyelidlines2 with another shape (the right eye)*/

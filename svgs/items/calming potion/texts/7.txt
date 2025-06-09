@@ -1,0 +1,5 @@
+This coconut contains a
+--- RECORDSEPARATOR ---
+special potion that can calm
+--- RECORDSEPARATOR ---
+the Great Booga Shark.

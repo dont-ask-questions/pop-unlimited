@@ -1,4 +1,7 @@
-"defaultAppearances": [
+"defaultAppearances" : {
+
+"gender": [
+
   
   "male"{
       "hair" : [//when the sign up comes, the game will choose randomly from this list for the hair div, but they will change the fill attribute to the hair color the game first picked up, or what the player wants. but the player can choose whatever hair they want.
@@ -20,5 +23,8 @@
     }
     "gender_neutral" {//both male and female attributes. like a character with braids but no eyelashes.
     }
+  ]
 
     //okay, some of these AREN'T in the signup screen. i have to watch some walkthroughs or check on the wiki to check which hair goes to which :derp:
+  }
+  //what's the simplest way to have json files go inside other json files?

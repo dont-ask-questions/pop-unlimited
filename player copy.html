@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Assembly</title>
+    <link rel="stylesheet" href="player copy.css">
+</head>  
+<body>
+    <div class="guide">
+        <img src="https://i.ibb.co/0qchhZT/le-reference-pic.png" alt="le-reference-pic" width="264" height="auto";/>
+
+    </div>
+    
+    <div class="character">
+
+    <div class="guide">
+        <object data="/svgs/char/shapes/30.svg" type="image/svg+xml" class="part body"></object>
+
+    </div>
+      
+     
+  <div class="whole_arm_left">
+    
+    <div class="arm">
+ <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Example of a bent arm/leg using a quadratic Bézier curve -->
+  <path id="arm_color" d="M 100 200 Q 140 190 160 200" 
+        stroke="#cca352" 
+        fill="transparent" 
+        stroke-width="3" 
+        stroke-linecap="round"
+        />
+</svg> 
+  </div>
+        <div class="hand">
+<svg xmlns:ffdec="https://www.free-decompiler.com/flash" xmlns:xlink="http://www.w3.org/1999/xlink" ffdec:objectType="shape" height="21.2px" width="21.2px" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1.0, 0.0, 0.0, 1.0, 10.6, 10.6)">
+    <path id="hand_color" d="M-7.55 -7.5 Q-4.4 -10.6 0.0 -10.6 4.4 -10.6 7.45 -7.5 10.6 -4.4 10.6 0.0 10.6 4.4 7.45 7.5 4.4 10.6 0.0 10.6 -4.4 10.6 -7.55 7.5 -10.6 4.4 -10.6 0.0 -10.6 -4.4 -7.55 -7.5" fill="#cca352" fill-rule="evenodd" stroke="none"/>
+  </g>
+</svg>
+    </div>
+  </div>
+
+<!--well bruh, i need to add something which can automcatically assign a color from the "skin color" option in the old opening screen to the skin color here. but where can i find them in the game files?-->
+ 
+  
+
+  
+  
+
+    <div class="whole_head">
+      
+      
+      
+        
+
+    <div class="eyes">
+         <div class="eyelidlines">
+        <svg>
+                  <clipPath id="cut-bottom">
+      <defs><clipPath clipPathUnits="userSpaceOnUse" id="a"><path d="M-57.3-26.6v53.2H3.839c-.02-.301-.042-.6-.06-.901-2.963-.245-5.933-.587-8.878-.643-.655-1.858-1.444-3.675-1.967-5.574-.263-.958-.582-3.19-.855-5.266-6.813-.163-3.393-1.313-.123-.97-.095-.755-.228-1.738-.274-2.133-.457-3.96-.765-7.936-1.072-11.91-.203-2.596-.417-5.192-.633-7.787-.846-10.18 3.516-15.993 8.582-17.073.037-.314.08-.628.118-.943zm52.1 40.836-.01.002.01.008v-.01z"/></clipPath></defs><path d="M26.55-26.6q12.7 0 21.7 7.8t9 18.8q0 11-9 18.8-9 7.8-21.7 7.8t-21.7-7.8q-9-7.8-9-18.8t9-18.8q9-7.8 21.7-7.8M-24.7-12.75q5.6 6.4 5.6 15.45 0 9.05-5.6 15.45-5.6 6.4-13.5 6.4t-13.5-6.4q-5.6-6.4-5.6-15.45 0-9.05 5.6-15.45 5.6-6.4 13.5-6.4t13.5 6.4" fill="#fff" fill-rule="evenodd" style="fill:blue" clip-path="url(#a)" transform="translate(57.3 26.6)"/>
+    </clipPath>
+      
+
+    <!-- Eyelids (blinking animation) -->
+
+<g clip-path="url(#cut-bottom)">
+<g class="eyelid_outline" transform="matrix(1.0, 0.0, 0.0, 1.0, 66.55, 1.35)">
+    <g>
+    <path d="M66.55 1.4 L-66.55 1.4 -66.55 -1.35 66.55 -1.35 66.55 1.4" fill="#000000" fill-opacity="0.49803922" fill-rule="evenodd" stroke="none"/>
+</g>
+  </g>
+        </g></svg>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="eyelidlines2">
+        <svg>   
+                  <clipPath id="cut-bottom2">
+<ellipse cx="29" cy="30.5" rx="30" ry="25" fill=red fill-opacity="0.6"  />
+    </clipPath>
+      
+
+    <!-- Eyelids (blinking animation) -->
+
+<g clip-path="url(#cut-bottom2)">
+<g transform="matrix(1.0, 0.0, 0.0, 1.0, 66.55, 1.35)">
+    <g class="right_eyelid_outline">
+    <path d="M66.55 1.4 L-66.55 1.4 -66.55 -1.35 66.55 -1.35 66.55 1.4" fill="#000000" fill-opacity="0.49803922" fill-rule="evenodd" stroke="none"/>
+</g>
+  </g>
+        </g></svg>
+      </div>
+      
+      
+        
+
+<svg id="eyes_svg">
+    <g transform="matrix(1.0, 0.0, 0.0, 1.0, 57.3, 26.6)">
+        <path d="M26.55 -26.6 Q39.25 -26.6 48.25 -18.8 57.25 -11.0 57.25 0.0 57.25 11.0 48.25 18.8 39.25 26.6 26.55 26.6 13.85 26.6 4.85 18.8 -4.15 11.0 -4.15 0.0 -4.15 -11.0 4.85 -18.8 13.85 -26.6 26.55 -26.6 M-24.7 -12.75 Q-19.1 -6.35 -19.1 2.7 -19.1 11.75 -24.7 18.15 -30.3 24.55 -38.2 24.55 -46.1 24.55 -51.7 18.15 -57.3 11.75 -57.3 2.7 -57.3 -6.35 -51.7 -12.75 -46.1 -19.15 -38.2 -19.15 -30.3 -19.15 -24.7 -12.75" fill="#ffffff" fill-rule="evenodd" stroke="none"/>
+    </g>
+
+    <!-- Pupils -->
+    <g id="pupils" transform="matrix(1.0, 0.0, 0.0, 1.0, 34.5, 7.0)">
+        <path d="M-24.25 4.75 Q-26.0 6.5 -28.5 6.5 -31.0 6.5 -32.75 4.75 -34.5 3.0 -34.5 0.5 -34.5 -2.0 -32.75 -3.75 -31.0 -5.5 -28.5 -5.5 -26.0 -5.5 -24.25 -3.75 -22.5 -2.0 -22.5 0.5 -22.5 3.0 -24.25 4.75" fill="#000000" fill-rule="evenodd" stroke="none"/>
+        <path d="M33.15 4.95 Q31.1 7.0 28.2 7.0 25.3 7.0 23.25 4.95 21.2 2.9 21.2 0.0 21.2 -2.9 23.25 -4.95 25.3 -7.0 28.2 -7.0 31.1 -7.0 33.15 -4.95 35.2 -2.9 35.2 0.0 35.2 2.9 33.15 4.95" fill="#000000" fill-rule="evenodd" stroke="none"/>
+    </g>
+
+ <g class="eyelid"  transform="matrix(1.0, 0.0, 0.0, 1.0, 57.3, 26.6)">
+    <path id="eyelids_color" d="M26.55 -26.6 Q39.25 -26.6 48.25 -18.8 57.25 -11.0 57.25 0.0 57.25 11.0 48.25 18.8 39.25 26.6 26.55 26.6 13.85 26.6 4.85 18.8 -4.15 11.0 -4.15 0.0 -4.15 -11.0 4.85 -18.8 13.85 -26.6 26.55 -26.6 M-24.7 -12.75 Q-19.1 -6.35 -19.1 2.7 -19.1 11.75 -24.7 18.15 -30.3 24.55 -38.2 24.55 -46.1 24.55 -51.7 18.15 -57.3 11.75 -57.3 2.7 -57.3 -6.35 -51.7 -12.75 -46.1 -19.15 -38.2 -19.15 -30.3 -19.15 -24.7 -12.75" fill="#ffcc66"/>
+
+       
+</g>
+    
+    <g id="eyesoutline" transform="matrix(1.0, 0.0, 0.0, 1.0, 57.3, 26.6)">
+    <path d="M-50.2 -11.05 Q-55.2 -5.35 -55.2 2.7 -55.2 10.8 -50.2 16.5 -45.25 22.2 -38.15 22.2 -31.1 22.2 -26.1 16.5 -21.15 10.8 -21.1 2.7 -21.15 -5.35 -26.1 -11.05 -31.1 -16.8 -38.15 -16.8 -45.25 -16.8 -50.2 -11.05 M-57.3 2.7 Q-57.3 -6.35 -51.7 -12.75 -46.1 -19.15 -38.2 -19.15 -30.3 -19.15 -24.7 -12.75 -19.1 -6.35 -19.1 2.7 -19.1 11.75 -24.7 18.15 -30.3 24.55 -38.2 24.55 -46.1 24.55 -51.7 18.15 -57.3 11.75 -57.3 2.7" fill="#000000" fill-opacity="0.49803922" fill-rule="evenodd" stroke="none"/>
+    <path d="M26.55 -24.3 Q14.9 -24.3 6.7 -17.15 -1.55 -10.05 -1.55 0.05 -1.55 10.1 6.7 17.25 14.9 24.35 26.55 24.4 38.15 24.35 46.4 17.25 54.65 10.1 54.65 0.05 54.65 -10.05 46.4 -17.15 38.15 -24.3 26.55 -24.3 M26.55 -26.6 Q39.25 -26.6 48.25 -18.8 57.25 -11.0 57.25 0.0 57.25 11.0 48.25 18.8 39.25 26.6 26.55 26.6 13.85 26.6 4.85 18.8 -4.15 11.0 -4.15 0.0 -4.15 -11.0 4.85 -18.8 13.85 -26.6 26.55 -26.6" fill="#000000" fill-opacity="0.49803922" fill-rule="evenodd" stroke="none"/>
+  </g>
+
+
+</svg>
+
+
+        </div>
+        
+        <!-- Outline SVG -->
+        <div class="head">
+
+
+
+            <svg id="head_svg">
+               
+
+    <svg id="head_shape" xmlns="http://www.w3.org/2000/svg" width="150" height="90">
+
+
+
+              <g transform="matrix(1.0, 0.0, 0.0, 1.0, 75.0, 45.0)">
+    <path id="head_color" d="M75.0 0.0 Q75.0 18.65 53.0 31.8 31.05 45.0 0.0 45.0 -31.05 45.0 -53.05 31.8 -75.0 18.65 -75.0 0.0 -75.0 -18.65 -53.05 -31.85 -31.05 -45.0 0.0 -45.0 31.05 -45.0 53.0 -31.85 75.0 -18.65 75.0 0.0" fill="#ffcc66" fill-rule="evenodd" stroke="none" />
+  </g>
+         
+        <g id="headoutline" transform="matrix(1.0, 0.0, 0.0, 1.0, 75.0, 45.0)">
+    <path d="M53.0 -31.85 Q75.0 -18.65 75.0 0.0 75.0 18.65 53.0 31.8 31.05 45.0 0.0 45.0 -31.05 45.0 -53.05 31.8 -75.0 18.65 -75.0 0.0 -75.0 -18.65 -53.05 -31.85 -31.05 -45.0 0.0 -45.0 31.05 -45.0 53.0 -31.85 M51.05 -29.9 Q29.9 -42.25 0.0 -42.25 -29.9 -42.25 -51.05 -29.9 -72.2 -17.5 -72.2 0.0 -72.2 17.5 -51.05 29.85 -29.9 42.25 0.0 42.25 29.9 42.25 51.05 29.85 72.2 17.5 72.2 0.0 72.2 -17.5 51.05 -29.9" fill="#000000" fill-opacity="0.49803922" fill-rule="evenodd" stroke="none"/>
+  </g>
+
+  </svg>
+</svg>
+</div>
+
+
+
+</div>
+
+<div class="whole_body">
+<svg xmlns:ffdec="https://www.free-decompiler.com/flash" xmlns:xlink="http://www.w3.org/1999/xlink" ffdec:objectType="shape" height="92.35px" width="74.4px" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1.0, 0.0, 0.0, 1.0, 37.2, 46.3)">
+    <path id="body_color" d="M30.05 -17.95 Q33.45 -10.7 35.35 -1.95 L36.25 2.95 36.7 6.3 37.2 12.6 Q37.2 16.55 36.8 19.65 35.85 26.7 33.15 30.85 28.5 38.0 17.05 42.75 13.55 44.05 10.2 44.75 4.5 45.9 -0.65 46.05 L-11.25 45.35 -14.3 44.6 -17.6 43.3 Q-19.3 42.6 -21.6 40.9 L-23.85 39.05 Q-27.65 35.4 -30.0 30.8 L-31.35 28.05 Q-33.35 23.15 -34.7 17.7 -35.7 14.35 -36.35 10.05 -37.7 0.95 -36.95 -7.35 -36.15 -16.1 -33.0 -24.05 -26.0 -41.95 -11.4 -45.55 0.55 -48.45 11.75 -40.4 L16.85 -36.35 Q25.05 -28.75 30.05 -17.95" fill="#ffcc66" fill-rule="evenodd" stroke="none"/>
+  </g>
+</svg>
+
+  <div class="whole_arm">
+    
+    <div class="arm">
+ <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Example of a bent arm/leg using a quadratic Bézier curve -->
+  <path id="arm2_color" d="M 100 200 Q 140 190 160 200" 
+        stroke="#cca352" 
+        fill="transparent" 
+        stroke-width="3" 
+        stroke-linecap="round"
+        />
+</svg> 
+  </div>
+        <div class="hand">
+<svg xmlns:ffdec="https://www.free-decompiler.com/flash" xmlns:xlink="http://www.w3.org/1999/xlink" ffdec:objectType="shape" height="21.2px" width="21.2px" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1.0, 0.0, 0.0, 1.0, 10.6, 10.6)">
+    <path id="other_hand" d="M-7.55 -7.5 Q-4.4 -10.6 0.0 -10.6 4.4 -10.6 7.45 -7.5 10.6 -4.4 10.6 0.0 10.6 4.4 7.45 7.5 4.4 10.6 0.0 10.6 -4.4 10.6 -7.55 7.5 -10.6 4.4 -10.6 0.0 -10.6 -4.4 -7.55 -7.5" fill="#cca352" fill-rule="evenodd" stroke="none"/>
+  </g>
+</svg>
+    </div>
+  </div>
+
+
+  
+  </div>
+
+
+       <!-- <object data="leftarms.svg" type="image/svg+xml" class="part arms"></object>
+        <object data="rightarms.svg" type="image/svg+xml" class="part arms"></object>
+        <object data="leftlegs.svg" type="image/svg+xml" class="part legs"></object>
+        <object data="rightlegs.svg" type="image/svg+xml" class="part legs"></object>-->
+    </div> 
+
+</div>
+
+    <script src="player.js"></script>
+</body>
+</html>

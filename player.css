@@ -80,7 +80,25 @@
  }
 }
 
+@keyframes wipe-in-out-eyelid2 {
+  0% {
+    clip-path: inset(0 0 50% 0); /* Fully hidden from the bottom */
+  }
+  5% {
+    clip-path: inset(0 0 0 0); /* Fully visible (wipe-in complete) */
+  }
+  10% {
+    clip-path: inset(0 0 50% 0); /* Fully hidden again (wipe-out complete) */
+  }
+  100% {
+    clip-path: inset(0 0 50% 0); /* Stay hidden for the rest of the duration */
+ }
+}
+/*it's either gonna start from the very top, or the middle. then that's gonna affect the animation of the eyelid outlines as well.*/
+/*maybe i should have another animation attribute here, and let the system choose between wipe-in-and-out and the other one*/
 
+
+/*it was getting very messy in here so here's the eyelid css...*/
 
 @keyframes eyelids-outlines {
     0% {
@@ -97,18 +115,6 @@
   }
 }
 
-.eyelid {
-  fill: #ffcc66; /* Eyelid color */
-  animation: wipe-in-out-eyelid 5s ease-out infinite; /* Wipe animation */
-  transform-origin: center;
-  position: relative;
-  bottom: 0;
-}
-/* Animation for the line growing down, shrinking, and moving back up */
-.eyelid_outline {
-   animation: eyelids-outlines 5s ease-out infinite;
-}
-
 @keyframes eyelids-outlines2 {
     0% {
         transform: translateY(0px);
@@ -123,6 +129,21 @@
     transform: translateY(0px);
   }
 }
+
+.eyelid {
+  fill: #ffcc66; /* Eyelid color */
+  animation: wipe-in-out-eyelid 5s ease-out infinite; /* Wipe animation */
+  transform-origin: center;
+  position: relative;
+  bottom: 0;
+}
+/*aight so im gonna switch the animation to the new animation and see how it goes lmao
+/* Animation for the line growing down, shrinking, and moving back up */
+.eyelid_outline {
+   animation: eyelids-outlines 5s ease-out infinite;
+}
+
+
 
 .eyelidlines {
   position:absolute;
@@ -186,3 +207,35 @@
   animation:arms 2s ease-in-out infinite;
 }
 /*all we need to do for the eyelids are to replace the clip path with .eyelidlines2 with another shape (the right eye)*/
+/*these are for the half closed eyes. we're gonna have JS change our eyelid-outlines with these.*/
+/*so these are temporary for now*/
+
+@keyframes eyelids-outlines3 {
+    0% {
+        transform: translateY(25px);
+  }
+  5% {
+    transform: translateY(50px); /*full length of the eye.*/
+  }
+  10% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(25px);
+  }
+}
+
+@keyframes eyelids-outlines4 {
+    0% {
+        transform: translateY(28px);
+  }
+  5% {
+    transform: translateY(58px); /*full length of the eye.*/
+  }
+  10% {
+    transform: translateY(28px);
+  }
+  100% {
+    transform: translateY(28px);
+  }
+}
